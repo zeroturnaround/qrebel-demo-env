@@ -37,7 +37,7 @@ RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub -o /tmp/google.pu
     && echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google.list \
     && mkdir -p /usr/share/desktop-directories \
     && apt-get -y update && apt-get install -y google-chrome-stable
-# Disable the SUID sandbox so that chrome can launch without being in a privileged container
+# Disable the SUID sandbox so that chrome can launch wgit cithout being in a privileged container
 RUN dpkg-divert --add --rename --divert /opt/google/chrome/google-chrome.real /opt/google/chrome/google-chrome \
     && echo "#!/bin/bash\nexec /opt/google/chrome/google-chrome.real --no-sandbox --disable-setuid-sandbox \"\$@\"" > /opt/google/chrome/google-chrome \
     && chmod 755 /opt/google/chrome/google-chrome
@@ -48,6 +48,10 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     xvfb
+
+#Additional plugins for Jenkins
+COPY --chown=jenkins:jenkins plugins.txt /usr/share/jenkins/plugins.txt
+RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/plugins.txt
 
 USER jenkins
 
