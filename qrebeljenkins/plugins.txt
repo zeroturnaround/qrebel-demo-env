@@ -1,2 +1,3 @@
 postbuild-task:latest
 build-env-propagator:latest
+antisamy-markup-formatter:latest
