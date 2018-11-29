@@ -1,0 +1,16 @@
+commit 083d86bacc5c919b939940f34f2cd2be4dae2484
+tree cafbe0c70b17f8e45ca712f21af22cbd1ab7537b
+parent 7ec97591faa7b3d5052c20d52150910c869615e5
+author Sten <sten@Stens-MacBook.local> 2018-11-27 15:09:22 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-27 15:09:22 +0200
+
+    Fix 'QRebel version
+
+
+
+:100644 100644 eba1cd32d1df783e0fa3feab061f205334039aed 518684bc9d9626fb8db8d68ddf2a885d09e1b552 M	spring-petclinic-api-gateway/pom.xml
+:100644 100644 213cbd8844d3450d4603abdf3f7dd16db770beb8 bf4f57691b2528165dfbc446b50cbcbf97efdd58 M	spring-petclinic-config-server/pom.xml
+:100644 100644 367938864aaa8f31cd3b62e946cc0f4a95f9399f 2e1796cde08814e367acda5630e806a9bf3ac3bc M	spring-petclinic-customers-service/pom.xml
+:100644 100644 9a3a9c1362d352212b2866bcc998573fb1753c0c cfe268db357a31c32ff5465e0738cfcc0f821579 M	spring-petclinic-discovery-server/pom.xml
+:100644 100644 318d382d909f475286982edb11efc7019c41d053 505f97386165271199abe196d71322a7fb215ea2 M	spring-petclinic-vets-service/pom.xml
+:100644 100644 999bd1bc1ce54c98283981f392f9ae379133e7d9 d8d7c2d68fc4cca0dd4d9929abb75fa302555b1f M	spring-petclinic-visits-service/pom.xml

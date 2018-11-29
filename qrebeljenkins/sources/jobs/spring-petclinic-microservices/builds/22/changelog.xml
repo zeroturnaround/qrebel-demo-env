@@ -1,0 +1,11 @@
+commit 702c70b1bec60e88c01f96b0e0dad9acf14d6731
+tree 5162d4f9413c9d127897947b229fa5191ccfc99a
+parent efa291c4a18676108a10f581472cfdc562b6a458
+author Sten <sten@Stens-MacBook.local> 2018-11-27 12:42:00 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-27 12:42:00 +0200
+
+    Revert ribbon eager-load
+
+
+
+:100644 100644 224f85cb06c07d8c95ae302a0578c956af835723 e7de112c99e3cb7521c3b4a0e3aa49e1fa9c808d M	spring-petclinic-api-gateway/src/main/resources/application.yml

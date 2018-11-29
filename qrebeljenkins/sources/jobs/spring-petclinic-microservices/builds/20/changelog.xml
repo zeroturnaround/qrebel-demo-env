@@ -1,0 +1,11 @@
+commit bb22f03a96f93c05de177e24ce72d1c54efd0920
+tree 30e2ba3af58a7460b2a7315c234d45dda1dfe850
+parent 67b82b3c344e5a01ddedf05ccdd9eb77f6a14ab7
+author Sten <sten@Stens-MacBook.local> 2018-11-27 10:33:03 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-27 10:33:03 +0200
+
+    Remove ribbon timeouts
+
+
+
+:100644 100644 190f79ec325f3689a23de76e42044e66605b3b80 224f85cb06c07d8c95ae302a0578c956af835723 M	spring-petclinic-api-gateway/src/main/resources/application.yml

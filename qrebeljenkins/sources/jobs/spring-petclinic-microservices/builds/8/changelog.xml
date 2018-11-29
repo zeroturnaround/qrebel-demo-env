@@ -1,0 +1,11 @@
+commit c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+tree 188ee3c9a4abe867e2ebee6caf275d939f90cee3
+parent 3c4da23ada0bef997558821352b11b25c1731daa
+author Sten <sten@Stens-MacBook.local> 2018-11-23 17:44:38 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-23 17:44:38 +0200
+
+    Add missing dockerfile
+
+
+
+:100644 100644 337ec9947a9914df2a99a2c590a0125a4a2c1c5b dc2d36bd6420f6379c3fa14f74ede75644563caf M	docker/Dockerfile

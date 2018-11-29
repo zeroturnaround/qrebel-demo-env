@@ -1,0 +1,194 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 083d86bacc5c919b939940f34f2cd2be4dae2484 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 083d86bacc5c919b939940f34f2cd2be4dae2484
+Commit message: "Fix 'QRebel version"
+ > git rev-list --no-walk 083d86bacc5c919b939940f34f2cd2be4dae2484 # timeout=10
+Build environment variables will be made available to the next build: QREBEL_AUTH_TOKEN=ae487773-386b-4508-8f1d-cac79497ed60:APP_VERSION=2.0.6:APP_BUILD=2.0.6RC1
+[workspace] $ mvn clean install -PbuildDocker
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-petclinic-microservices
+[INFO] spring-petclinic-admin-server
+[INFO] spring-petclinic-customers-service
+[INFO] spring-petclinic-vets-service
+[INFO] spring-petclinic-visits-service
+[INFO] spring-petclinic-config-server
+[INFO] spring-petclinic-discovery-server
+[INFO] spring-petclinic-api-gateway
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-microservices 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-microservices ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-microservices ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/spring-petclinic-microservices/2.0.5/spring-petclinic-microservices-2.0.5.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-admin-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-admin-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-admin-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [083d86bacc5c919b939940f34f2cd2be4dae2484]
+[INFO] git.commit.id.describe 083d86b
+[INFO] git.commit.id 083d86bacc5c919b939940f34f2cd2be4dae2484
+[INFO] git.commit.id.abbrev 083d86b
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Fix 'QRebel version
+[INFO] git.commit.message.short Fix 'QRebel version
+[INFO] git.commit.time 2018-11-27T13:09:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [083d86bacc5c919b939940f34f2cd2be4dae2484]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [083d86bacc5c919b939940f34f2cd2be4dae2484]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 619
+[INFO] git.build.time 2018-11-27T19:07:29+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 52e300890374
+[INFO] git.build.number 30
+[INFO] git.commit.id.describe-short 083d86b
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/classes/git.properties] (for module spring-petclinic-admin-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-admin-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-admin-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-admin-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-admin-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-admin-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spring-petclinic-admin-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-admin-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-admin-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/docker/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-admin-server
+Nov 27, 2018 7:07:38 PM com.spotify.docker.client.shaded.org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: Permission denied
+Nov 27, 2018 7:07:38 PM com.spotify.docker.client.shaded.org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Nov 27, 2018 7:07:38 PM com.spotify.docker.client.shaded.org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: Permission denied
+Nov 27, 2018 7:07:38 PM com.spotify.docker.client.shaded.org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+Nov 27, 2018 7:07:38 PM com.spotify.docker.client.shaded.org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: Permission denied
+Nov 27, 2018 7:07:38 PM com.spotify.docker.client.shaded.org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->unix://localhost:80
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spring-petclinic-microservices ..................... SUCCESS [  0.671 s]
+[INFO] spring-petclinic-admin-server ...................... FAILURE [ 11.257 s]
+[INFO] spring-petclinic-customers-service ................. SKIPPED
+[INFO] spring-petclinic-vets-service ...................... SKIPPED
+[INFO] spring-petclinic-visits-service .................... SKIPPED
+[INFO] spring-petclinic-config-server ..................... SKIPPED
+[INFO] spring-petclinic-discovery-server .................. SKIPPED
+[INFO] spring-petclinic-api-gateway ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.333 s
+[INFO] Finished at: 2018-11-27T19:07:38+00:00
+[INFO] Final Memory: 78M/410M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal com.spotify:docker-maven-plugin:1.1.1:build (default) on project spring-petclinic-admin-server: Exception caught: java.util.concurrent.ExecutionException: com.spotify.docker.client.shaded.javax.ws.rs.ProcessingException: java.io.IOException: Permission denied -> [Help 1]
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] After correcting the problems, you can resume the build with the command
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   mvn <goals> -rf :spring-petclinic-admin-server
+Build step 'Invoke top-level Maven targets' marked build as failure
+Performing Post build task...
+Match found for : : True
+Logical operation result is TRUE
+Running script  : docker-compose down
+[workspace] $ /bin/sh -xe /tmp/jenkins1084369322893522353.sh
++ docker-compose down
+Couldn't connect to Docker daemon. You might need to install Docker:
+
+https://docs.docker.com/engine/installation/
+POST BUILD TASK : FAILURE
+END OF POST BUILD TASK : 0
+Finished: FAILURE

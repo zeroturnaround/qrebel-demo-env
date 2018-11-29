@@ -1,0 +1,1601 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c8c629a4d01d75ed43c1c56bb77f57f9894efa0e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+Commit message: "Add missing dockerfile"
+ > git rev-list --no-walk c8c629a4d01d75ed43c1c56bb77f57f9894efa0e # timeout=10
+[workspace] $ mvn clean install -PbuildDocker
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-petclinic-microservices
+[INFO] spring-petclinic-admin-server
+[INFO] spring-petclinic-customers-service
+[INFO] spring-petclinic-vets-service
+[INFO] spring-petclinic-visits-service
+[INFO] spring-petclinic-config-server
+[INFO] spring-petclinic-discovery-server
+[INFO] spring-petclinic-api-gateway
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-microservices 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-microservices ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-microservices ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/spring-petclinic-microservices/2.0.5/spring-petclinic-microservices-2.0.5.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-admin-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-admin-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-admin-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:04:36+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/classes/git.properties] (for module spring-petclinic-admin-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-admin-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-admin-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-admin-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-admin-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-admin-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spring-petclinic-admin-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-admin-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-admin-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/docker/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-admin-server
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [===>                                               ]  207.4kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  346.7kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  381.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  485.9kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  520.7kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  590.4kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]  625.2kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  729.6kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  764.4kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  834.1kB/3.006MB
+[0B[1A[2Knull: Downloading [==============>                                    ]  868.9kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  903.7kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  973.3kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  1.008MB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.078MB/3.006MB
+[0B[1A[2Knull: Downloading [==================>                                ]  1.113MB/3.006MB
+[0B[1A[2Knull: Downloading [===================>                               ]  1.147MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.217MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.252MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.321MB/3.006MB
+[0B[1A[2Knull: Downloading [======================>                            ]  1.356MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================>                           ]  1.391MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.461MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.496MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================>                        ]  1.565MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]  1.635MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]   1.67MB/3.006MB
+[0B[1A[2Knull: Downloading [============================>                      ]  1.739MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================>                     ]  1.774MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================>                    ]  1.844MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================>                   ]  1.879MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================>                   ]  1.913MB/3.006MB
+[0B[1A[2Knull: Downloading [================================>                  ]  1.983MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.053MB/3.006MB
+[0B[1A[2Knull: Downloading [===================================>               ]  2.122MB/3.006MB
+[0B[1A[2Knull: Downloading [===================================>               ]  2.157MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================================>             ]  2.227MB/3.006MB
+[0B[1A[2Knull: Downloading [======================================>            ]  2.296MB/3.006MB
+[0B[1A[2Knull: Downloading [======================================>            ]  2.331MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================================>           ]  2.401MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================================>         ]   2.47MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================================>         ]  2.505MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================================>        ]  2.575MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================================>       ]  2.645MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================================>     ]  2.714MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================================>    ]  2.784MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================================>   ]  2.853MB/3.006MB
+[0B[1A[2Knull: Downloading [================================================>  ]  2.923MB/3.006MB
+[0B[1A[2Knull: Downloading [=================================================> ]  2.993MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 7d0a358e76c3
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 514496e63cde
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 06687c1e75e7
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 62b9806cc88a
+Removing intermediate container 62b9806cc88a
+ ---> 229175261edf
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 7bac395fc410
+Removing intermediate container 7bac395fc410
+ ---> 4df34fa9dca1
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 3c96c1657f03
+[91mConnecting to hub.qrebel.com (54.173.254.10:443)
+[0m
+[91mqrebel-agent.jar       0% |                               |    35k  0:04:02 ETA
+[0m
+[91mqrebel-agent.jar      20% |******                         |  1762k  0:00:07 ETA
+[0m
+[91mqrebel-agent.jar      68% |*********************          |  5826k  0:00:01 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 3c96c1657f03
+ ---> c1b28c591ba1
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built c1b28c591ba1
+Successfully tagged mszarlinski/spring-petclinic-admin-server:latest
+[INFO] Built mszarlinski/spring-petclinic-admin-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-customers-service 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-customers-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-customers-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:05:02+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/classes/git.properties] (for module spring-petclinic-customers-service)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-customers-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-customers-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-customers-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-customers-service ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-customers-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-customers-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-customers-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-customers-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-customers-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.0.5/spring-petclinic-customers-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.0.5/spring-petclinic-customers-service-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-customers-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/docker/spring-petclinic-customers-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-customers-service
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  381.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  555.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  799.3kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  1.008MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.321MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]  1.635MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.053MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================================>         ]   2.47MB/3.006MB
+[0B[1A[2Knull: Downloading [=================================================> ]  2.993MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 19c3e9e11645
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> f8ba86332e68
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> c81589922f3d
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 0f0a904b0ffe
+Removing intermediate container 0f0a904b0ffe
+ ---> 3007548f077c
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in ebbd21d6e779
+Removing intermediate container ebbd21d6e779
+ ---> 800ab26950f0
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 0e7468bf9402
+[91mConnecting to hub.qrebel.com (54.173.254.10:443)
+[0m
+[91mqrebel-agent.jar       0% |                               |    11k  0:12:55 ETA
+[0m
+[91mqrebel-agent.jar      18% |*****                          |  1565k  0:00:08 ETA
+[0m
+[91mqrebel-agent.jar      66% |********************           |  5709k  0:00:01 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 0e7468bf9402
+ ---> a43f7653620b
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built a43f7653620b
+Successfully tagged mszarlinski/spring-petclinic-customers-service:latest
+[INFO] Built mszarlinski/spring-petclinic-customers-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-vets-service 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-vets-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-vets-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:05:18+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/classes/git.properties] (for module spring-petclinic-vets-service)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-vets-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-vets-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-vets-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-vets-service ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-vets-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-vets-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-vets-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-vets-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-vets-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/vets/spring-petclinic-vets-service/2.0.5/spring-petclinic-vets-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/vets/spring-petclinic-vets-service/2.0.5/spring-petclinic-vets-service-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-vets-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/docker/spring-petclinic-vets-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-vets-service
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  311.8kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  590.4kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  834.1kB/3.006MB
+[0B[1A[2Knull: Downloading [==========================>                        ]    1.6MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.087MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================================>    ]  2.797MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> bb94d25c8e9b
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> c4aa27e0136a
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> ec696b6d5197
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in ed7cab23156f
+Removing intermediate container ed7cab23156f
+ ---> 1a0aa7a3675a
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 8311b3b75417
+Removing intermediate container 8311b3b75417
+ ---> c859c2c75d2a
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in e970c77c0fb9
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       1% |                               |    86k  0:01:38 ETA
+[0m
+[91mqrebel-agent.jar      25% |*******                        |  2150k  0:00:05 ETA
+[0m
+[91mqrebel-agent.jar      59% |******************             |  5078k  0:00:02 ETA
+[0m
+[91mqrebel-agent.jar      95% |*****************************  |  8150k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container e970c77c0fb9
+ ---> e80e75bbf79f
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built e80e75bbf79f
+Successfully tagged mszarlinski/spring-petclinic-vets-service:latest
+[INFO] Built mszarlinski/spring-petclinic-vets-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-visits-service 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-visits-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-visits-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:05:34+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/classes/git.properties] (for module spring-petclinic-visits-service)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-visits-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-visits-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-visits-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-visits-service ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-visits-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-visits-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-visits-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-visits-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-visits-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/visits/spring-petclinic-visits-service/2.0.5/spring-petclinic-visits-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/visits/spring-petclinic-visits-service/2.0.5/spring-petclinic-visits-service-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-visits-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/docker/spring-petclinic-visits-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-visits-service
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  381.5kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]    660kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  903.7kB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.252MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.053MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 4e4a331b9a09
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> bbce33f42af2
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 250e8e97b01a
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 0a212c40212e
+Removing intermediate container 0a212c40212e
+ ---> a8fa8342f9b5
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 96f843a5056b
+Removing intermediate container 96f843a5056b
+ ---> 1617e8a22086
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 6c4ec974a197
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       0% |                               |    38k  0:03:43 ETA
+[0m
+[91mqrebel-agent.jar      23% |*******                        |  2015k  0:00:06 ETA
+[0m
+[91mqrebel-agent.jar      46% |**************                 |  3999k  0:00:03 ETA
+[0m
+[91mqrebel-agent.jar      83% |**************************     |  7167k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 6c4ec974a197
+ ---> 1cc2164b41af
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 1cc2164b41af
+Successfully tagged mszarlinski/spring-petclinic-visits-service:latest
+[INFO] Built mszarlinski/spring-petclinic-visits-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-config-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-config-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-config-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:05:49+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/classes/git.properties] (for module spring-petclinic-config-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-config-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-config-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-config-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-config-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-config-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-config-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-config-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-config-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-config-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.0.5/spring-petclinic-config-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.0.5/spring-petclinic-config-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-config-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/docker/spring-petclinic-config-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-config-server
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.217MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.252MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 9967849c647b
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> b036d20a9fa2
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> ecbf9ed5c1a8
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 1bdafbc1e6cd
+Removing intermediate container 1bdafbc1e6cd
+ ---> ff92101f88f6
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in ece302655f68
+Removing intermediate container ece302655f68
+ ---> baf2391c06e6
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 6d1134555319
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       3% |*                              |   323k  0:00:25 ETA
+[0m
+[91mqrebel-agent.jar      35% |***********                    |  3043k  0:00:03 ETA
+[0m
+[91mqrebel-agent.jar      91% |****************************   |  7795k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 6d1134555319
+ ---> 4107c39e5f7e
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 4107c39e5f7e
+Successfully tagged mszarlinski/spring-petclinic-config-server:latest
+[INFO] Built mszarlinski/spring-petclinic-config-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-discovery-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-discovery-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-discovery-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:06:00+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/classes/git.properties] (for module spring-petclinic-discovery-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-discovery-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-discovery-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-discovery-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-discovery-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-discovery-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-discovery-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-discovery-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-discovery-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-discovery-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.0.5/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.0.5/spring-petclinic-discovery-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-discovery-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/docker/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-discovery-server
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  416.3kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  590.4kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  834.1kB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.078MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.461MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================>                    ]  1.809MB/3.006MB
+[0B[1A[2Knull: Downloading [================================>                  ]  1.948MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================================>     ]  2.748MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> d3ef7bffb494
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 308621095004
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 95c72fa7a030
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 00e7a88ed37b
+Removing intermediate container 00e7a88ed37b
+ ---> d5d4549a3dd5
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 11e915f10185
+Removing intermediate container 11e915f10185
+ ---> 00de04a8cc8f
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in d8a7d7084395
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       3% |*                              |   323k  0:00:25 ETA
+[0m
+[91mqrebel-agent.jar      34% |**********                     |  2947k  0:00:03 ETA[0m
+[91m
+[0m
+[91mqrebel-agent.jar      90% |****************************   |  7715k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+[0m
+[91m
+[0m
+Removing intermediate container d8a7d7084395
+ ---> fbefff071097
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built fbefff071097
+Successfully tagged mszarlinski/spring-petclinic-discovery-server:latest
+[INFO] Built mszarlinski/spring-petclinic-discovery-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-api-gateway 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-api-gateway ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-api-gateway ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] git.commit.id.describe c8c629a
+[INFO] git.commit.id c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+[INFO] git.commit.id.abbrev c8c629a
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add missing dockerfile
+[INFO] git.commit.message.short Add missing dockerfile
+[INFO] git.commit.time 2018-11-23T15:44:38+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [c8c629a4d01d75ed43c1c56bb77f57f9894efa0e]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 613
+[INFO] git.build.time 2018-11-23T16:06:13+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 10
+[INFO] git.commit.id.describe-short c8c629a
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/git.properties] (for module spring-petclinic-api-gateway)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-api-gateway ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- wro4j-maven-plugin:1.8.0:run (default) @ spring-petclinic-api-gateway ---
+[INFO] /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/src/main/less
+[INFO] Executing the mojo: 
+[INFO] Wro4j Model path: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/src/main/wro/wro.xml
+[INFO] targetGroups: null
+[INFO] minimize: true
+[INFO] ignoreMissingResources: null
+[INFO] parallelProcessing: false
+[INFO] buildDirectory: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] destinationFolder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] cssDestinationFolder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/static/css
+[INFO] The following groups will be processed: [petclinic]
+[INFO] folder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/static/css
+[INFO] processing group: petclinic.css
+[8mha:////4K+0M8tTBOVJrRck2GmeRlixML2o3K8XMzUiz93AFcz/AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Less warnings are:
+[8mha:////4K+0M8tTBOVJrRck2GmeRlixML2o3K8XMzUiz93AFcz/AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 10:1 Cannot link source map. Css result location is not know and could not be deduced from input less source..
+[INFO] file size: petclinic.css -> 152551 bytes
+[INFO] /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/static/css/petclinic.css (152551 bytes)
+[INFO] folder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] processing group: petclinic.js
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-api-gateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 48 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-api-gateway ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-api-gateway ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-api-gateway ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-api-gateway ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-api-gateway ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-api-gateway ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-api-gateway ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.0.5/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.0.5/spring-petclinic-api-gateway-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-api-gateway ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/docker/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-api-gateway
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [===>                                               ]  207.4kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  416.3kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]    660kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  903.7kB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.217MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]   1.67MB/3.006MB
+[0B[1A[2Knull: Downloading [====================================>              ]  2.192MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 17d82d3afef9
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> c43f3bb121cd
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 92b18dda8f99
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 6e8cc3800100
+Removing intermediate container 6e8cc3800100
+ ---> 2235c059b264
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 51ee5050900d
+Removing intermediate container 51ee5050900d
+ ---> 0d689d3cc38e
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 14b4f4394bea
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       0% |                               |    38k  0:03:43 ETA
+[0m
+[91mqrebel-agent.jar      18% |*****                          |[0m
+[91m  1574k[0m
+[91m  0:00:08 ETA
+[0m
+[91mqrebel-agent.jar    [0m
+[91m  66%[0m
+[91m |********************           |[0m
+[91m  5638k[0m
+[91m  0:00:01 ETA[0m
+[91m
+[0m
+[91mqrebel-agent.jar    [0m
+[91m 100% |*******************************|  8539k  0:00:00 ETA[0m
+[91m
+[0m
+[91m
+[0m
+Removing intermediate container 14b4f4394bea
+ ---> 288644f13738
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 288644f13738
+Successfully tagged mszarlinski/spring-petclinic-api-gateway:latest
+[INFO] Built mszarlinski/spring-petclinic-api-gateway
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spring-petclinic-microservices ..................... SUCCESS [  0.425 s]
+[INFO] spring-petclinic-admin-server ...................... SUCCESS [ 27.648 s]
+[INFO] spring-petclinic-customers-service ................. SUCCESS [ 15.886 s]
+[INFO] spring-petclinic-vets-service ...................... SUCCESS [ 16.583 s]
+[INFO] spring-petclinic-visits-service .................... SUCCESS [ 15.031 s]
+[INFO] spring-petclinic-config-server ..................... SUCCESS [ 10.837 s]
+[INFO] spring-petclinic-discovery-server .................. SUCCESS [ 13.090 s]
+[INFO] spring-petclinic-api-gateway ....................... SUCCESS [ 23.454 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:04 min
+[INFO] Finished at: 2018-11-23T16:06:36+00:00
+[INFO] Final Memory: 129M/449M
+[INFO] ------------------------------------------------------------------------
+[workspace] $ /bin/sh -xe /tmp/jenkins5596725663892170877.sh
++ docker-compose up -d
+Creating tracing-server ... 
+Creating config-server  ... 
+[2A[2KCreating tracing-server ... [32mdone[0m[2B[1A[2KCreating config-server  ... [32mdone[0m[1BCreating discovery-server ... 
+[1A[2KCreating discovery-server ... [32mdone[0m[1BCreating api-gateway      ... 
+Creating customers-service ... 
+Creating vets-service      ... 
+Creating visits-service    ... 
+Creating admin-server      ... 
+[5A[2KCreating api-gateway       ... [32mdone[0m[5B[4A[2KCreating customers-service ... [32mdone[0m[4B[3A[2KCreating vets-service      ... [32mdone[0m[3B[2A[2KCreating visits-service    ... [32mdone[0m[2B[1A[2KCreating admin-server      ... [32mdone[0m[1B+ wait-for-it api-gateway:8080 -t 1000
+wait-for-it: waiting 1000 seconds for api-gateway:8080
+wait-for-it: api-gateway:8080 is available after 159 seconds
+[workspace] $ mvn -f spring-petclinic-e2e-tests/pom.xml clean verify -P jenkins
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-e2e-tests 2.0.5
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/maven-metadata.xml
+4/5 KB   5/5 KB            Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/maven-metadata.xml (5 KB at 2.9 KB/sec)
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/maven-metadata.xml (3 KB at 1.2 KB/sec)
+Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-test/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/maven-metadata.xml
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/maven-metadata.xml (3 KB at 38.1 KB/sec)
+2/5 KB   5/5 KB            Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-test/maven-metadata.xml (5 KB at 12.4 KB/sec)
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-e2e-tests ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-e2e-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/src/main/resources
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/src/main/resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-e2e-tests ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-e2e-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-e2e-tests ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-e2e-tests ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.roguewave.petclinic.vets.tests.VetResourcesITest
+16:09:48.728 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:09:48.780 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:09:48.828 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.roguewave.petclinic.vets.tests.VetResourcesITest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:09:48.870 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.roguewave.petclinic.vets.tests.VetResourcesITest], using SpringBootContextLoader
+16:09:48.883 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.roguewave.petclinic.vets.tests.VetResourcesITest]: class path resource [com/roguewave/petclinic/vets/tests/VetResourcesITest-context.xml] does not exist
+16:09:48.883 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.roguewave.petclinic.vets.tests.VetResourcesITest]: class path resource [com/roguewave/petclinic/vets/tests/VetResourcesITestContext.groovy] does not exist
+16:09:48.884 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.roguewave.petclinic.vets.tests.VetResourcesITest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:09:48.885 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.roguewave.petclinic.vets.tests.VetResourcesITest]: VetResourcesITest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:09:48.960 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.roguewave.petclinic.vets.tests.VetResourcesITest]
+16:09:48.979 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+16:09:48.980 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+16:09:48.984 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@2143437117 {name='systemProperties', properties={java.runtime.name=OpenJDK Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.181-b13, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, java.runtime.version=1.8.0_181-8u181-b13-2~deb9u1-b13, basedir=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, spring.profiles.active=jenkins, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, selenide.headless=true, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, surefire.test.class.path=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/classes:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/var/jenkins_home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-runner/1.1.0/junit-platform-runner-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.0/junit-platform-suite-api-1.1.0.jar:/var/jenkins_home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/5.0.1/selenide-5.0.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/jenkins_home/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/var/jenkins_home/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/var/jenkins_home/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/var/jenkins_home/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/var/jenkins_home/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RELEASE/spring-boot-starter-test-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test/2.0.5.RELEASE/spring-boot-test-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.5.RELEASE/spring-boot-test-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/var/jenkins_home/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/var/jenkins_home/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/var/jenkins_home/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar:/var/jenkins_home/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/jenkins_home/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/var/jenkins_home/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:, selenide.browser=chrome, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.9.93-linuxkit-aufs, user.home=/var/jenkins_home, user.timezone=Etc/UTC, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/classes:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/var/jenkins_home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-runner/1.1.0/junit-platform-runner-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.0/junit-platform-suite-api-1.1.0.jar:/var/jenkins_home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/5.0.1/selenide-5.0.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/jenkins_home/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/var/jenkins_home/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/var/jenkins_home/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/var/jenkins_home/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/var/jenkins_home/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RELEASE/spring-boot-starter-test-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test/2.0.5.RELEASE/spring-boot-test-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.5.RELEASE/spring-boot-test-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/var/jenkins_home/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/var/jenkins_home/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/var/jenkins_home/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar:/var/jenkins_home/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/jenkins_home/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/var/jenkins_home/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar, user.name=jenkins, java.vm.specification.version=1.8, sun.java.command=org.apache.maven.surefire.booter.ForkedBooter /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/surefire 2018-11-23T16-09-45_162-jvmRun1 surefire2752506440007874278tmp surefire_0136374609694913480tmp, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_181, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, localRepository=/var/jenkins_home/.m2/repository, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@260840925 {name='systemEnvironment', properties={PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log, RUN_DISPLAY_URL=http://localhost:30002/job/spring-petclinic-microservices/10/display/redirect, HUDSON_HOME=/var/jenkins_home, RUN_CHANGES_DISPLAY_URL=http://localhost:30002/job/spring-petclinic-microservices/10/display/redirect?page=changes, JOB_URL=http://localhost:30002/job/spring-petclinic-microservices/, HUDSON_COOKIE=620c1ff9-8746-4f3e-816c-39a0b0d9f902, JAVA_OPTS=-Djenkins.install.runSetupWizard=false, JENKINS_SERVER_COOKIE=04a6503f1b1a92d3, PWD=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, JENKINS_URL=http://localhost:30002/, BUILD_TAG=jenkins-spring-petclinic-microservices-10, MAVEN_TERMINATE_CMD=on, OLDPWD=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, JENKINS_HOME=/var/jenkins_home, NODE_NAME=master, BUILD_DISPLAY_NAME=#10, JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1, JOB_DISPLAY_URL=http://localhost:30002/job/spring-petclinic-microservices/display/redirect, GIT_BRANCH=origin/master, SHLVL=0, GIT_PREVIOUS_COMMIT=c8c629a4d01d75ed43c1c56bb77f57f9894efa0e, QREBEL_AUTH_TOKEN= ae487773-386b-4508-8f1d-cac79497ed60, JAVA_HOME=/docker-java-home, CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1, BUILD_ID=10, JENKINS_VERSION=2.138.3, LANG=C.UTF-8, JOB_NAME=spring-petclinic-microservices, GIT_PREVIOUS_SUCCESSFUL_COMMIT=55d7c75df117da5f75dee0c1a88122997bc18750, NODE_LABELS=master, HUDSON_URL=http://localhost:30002/, WORKSPACE=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace, JENKINS_SLAVE_AGENT_PORT=50000, JAVA_VERSION=8u181, MAVEN_CMD_LINE_ARGS= -f spring-petclinic-e2e-tests/pom.xml clean verify -P jenkins, JENKINS_OPTS=--httpPort=8088, GIT_COMMIT=c8c629a4d01d75ed43c1c56bb77f57f9894efa0e, EXECUTOR_NUMBER=1, HUDSON_SERVER_COOKIE=04a6503f1b1a92d3, JENKINS_UC=https://updates.jenkins.io, MAVEN_PROJECTBASEDIR=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace, JOB_BASE_NAME=spring-petclinic-microservices, CLASSPATH=/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/classes:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/var/jenkins_home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-runner/1.1.0/junit-platform-runner-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.0/junit-platform-suite-api-1.1.0.jar:/var/jenkins_home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/5.0.1/selenide-5.0.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/jenkins_home/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/var/jenkins_home/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/var/jenkins_home/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/var/jenkins_home/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/var/jenkins_home/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RELEASE/spring-boot-starter-test-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test/2.0.5.RELEASE/spring-boot-test-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.5.RELEASE/spring-boot-test-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/var/jenkins_home/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/var/jenkins_home/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/var/jenkins_home/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar:/var/jenkins_home/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/jenkins_home/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/var/jenkins_home/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar, JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals, BUILD_NUMBER=10, BUILD_URL=http://localhost:30002/job/spring-petclinic-microservices/10/, HOSTNAME=45ed468bebea, GIT_URL=https://github.com/sten711/spring-petclinic-microservices, JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental, HOME=/var/jenkins_home}}]
+16:09:49.016 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/roguewave/petclinic/vets/tests/] to resources [URL [file:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests/]]
+16:09:49.017 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests]
+16:09:49.017 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests] for files matching pattern [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests/*.class]
+16:09:49.024 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/roguewave/petclinic/vets/tests/*.class] to resources [file [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests/VetResourcesApp.class], file [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests/VetResourcesITest.class]]
+16:09:49.148 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes/com/roguewave/petclinic/vets/tests/VetResourcesApp.class]
+16:09:49.152 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.roguewave.petclinic.vets.tests.VetResourcesApp for test class com.roguewave.petclinic.vets.tests.VetResourcesITest
+16:09:49.450 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.roguewave.petclinic.vets.tests.VetResourcesITest]: using defaults.
+16:09:49.451 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:09:49.467 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+16:09:49.470 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+16:09:49.471 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:09:49.471 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36d585c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@87a85e1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@671a5887, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5552768b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c947bc5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@609db43b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55f616cf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1356d4d4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@c03cf28]
+16:09:49.488 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7e9131d5 testClass = VetResourcesITest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2e1d27ba testClass = VetResourcesITest, locations = '{}', classes = '{class com.roguewave.petclinic.vets.tests.VetResourcesApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3ec300f1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7d68ef40, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d9d4f9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3a079870], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+16:09:49.499 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7e9131d5 testClass = VetResourcesITest, testInstance = com.roguewave.petclinic.vets.tests.VetResourcesITest@d6e7bab, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2e1d27ba testClass = VetResourcesITest, locations = '{}', classes = '{class com.roguewave.petclinic.vets.tests.VetResourcesApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3ec300f1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7d68ef40, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d9d4f9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3a079870], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+16:09:49.549 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+16:09:49.549 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+16:09:49.549 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@1234250905 {name='systemProperties', properties={java.runtime.name=OpenJDK Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.181-b13, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, java.runtime.version=1.8.0_181-8u181-b13-2~deb9u1-b13, basedir=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, spring.profiles.active=jenkins, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, selenide.headless=true, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, surefire.test.class.path=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/classes:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/var/jenkins_home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-runner/1.1.0/junit-platform-runner-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.0/junit-platform-suite-api-1.1.0.jar:/var/jenkins_home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/5.0.1/selenide-5.0.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/jenkins_home/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/var/jenkins_home/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/var/jenkins_home/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/var/jenkins_home/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/var/jenkins_home/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RELEASE/spring-boot-starter-test-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test/2.0.5.RELEASE/spring-boot-test-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.5.RELEASE/spring-boot-test-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/var/jenkins_home/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/var/jenkins_home/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/var/jenkins_home/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar:/var/jenkins_home/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/jenkins_home/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/var/jenkins_home/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:, selenide.browser=chrome, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.9.93-linuxkit-aufs, user.home=/var/jenkins_home, user.timezone=Etc/UTC, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/classes:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/var/jenkins_home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-runner/1.1.0/junit-platform-runner-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.0/junit-platform-suite-api-1.1.0.jar:/var/jenkins_home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/5.0.1/selenide-5.0.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/jenkins_home/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/var/jenkins_home/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/var/jenkins_home/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/var/jenkins_home/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/var/jenkins_home/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RELEASE/spring-boot-starter-test-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test/2.0.5.RELEASE/spring-boot-test-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.5.RELEASE/spring-boot-test-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/var/jenkins_home/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/var/jenkins_home/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/var/jenkins_home/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar:/var/jenkins_home/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/jenkins_home/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/var/jenkins_home/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar, user.name=jenkins, java.vm.specification.version=1.8, sun.java.command=org.apache.maven.surefire.booter.ForkedBooter /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/surefire 2018-11-23T16-09-45_162-jvmRun1 surefire2752506440007874278tmp surefire_0136374609694913480tmp, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_181, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, localRepository=/var/jenkins_home/.m2/repository, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@16868310 {name='systemEnvironment', properties={PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log, RUN_DISPLAY_URL=http://localhost:30002/job/spring-petclinic-microservices/10/display/redirect, HUDSON_HOME=/var/jenkins_home, RUN_CHANGES_DISPLAY_URL=http://localhost:30002/job/spring-petclinic-microservices/10/display/redirect?page=changes, JOB_URL=http://localhost:30002/job/spring-petclinic-microservices/, HUDSON_COOKIE=620c1ff9-8746-4f3e-816c-39a0b0d9f902, JAVA_OPTS=-Djenkins.install.runSetupWizard=false, JENKINS_SERVER_COOKIE=04a6503f1b1a92d3, PWD=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, JENKINS_URL=http://localhost:30002/, BUILD_TAG=jenkins-spring-petclinic-microservices-10, MAVEN_TERMINATE_CMD=on, OLDPWD=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests, JENKINS_HOME=/var/jenkins_home, NODE_NAME=master, BUILD_DISPLAY_NAME=#10, JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1, JOB_DISPLAY_URL=http://localhost:30002/job/spring-petclinic-microservices/display/redirect, GIT_BRANCH=origin/master, SHLVL=0, GIT_PREVIOUS_COMMIT=c8c629a4d01d75ed43c1c56bb77f57f9894efa0e, QREBEL_AUTH_TOKEN= ae487773-386b-4508-8f1d-cac79497ed60, JAVA_HOME=/docker-java-home, CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1, BUILD_ID=10, JENKINS_VERSION=2.138.3, LANG=C.UTF-8, JOB_NAME=spring-petclinic-microservices, GIT_PREVIOUS_SUCCESSFUL_COMMIT=55d7c75df117da5f75dee0c1a88122997bc18750, NODE_LABELS=master, HUDSON_URL=http://localhost:30002/, WORKSPACE=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace, JENKINS_SLAVE_AGENT_PORT=50000, JAVA_VERSION=8u181, MAVEN_CMD_LINE_ARGS= -f spring-petclinic-e2e-tests/pom.xml clean verify -P jenkins, JENKINS_OPTS=--httpPort=8088, GIT_COMMIT=c8c629a4d01d75ed43c1c56bb77f57f9894efa0e, EXECUTOR_NUMBER=1, HUDSON_SERVER_COOKIE=04a6503f1b1a92d3, JENKINS_UC=https://updates.jenkins.io, MAVEN_PROJECTBASEDIR=/var/jenkins_home/jobs/spring-petclinic-microservices/workspace, JOB_BASE_NAME=spring-petclinic-microservices, CLASSPATH=/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/test-classes:/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/classes:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/var/jenkins_home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-runner/1.1.0/junit-platform-runner-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.0/junit-platform-suite-api-1.1.0.jar:/var/jenkins_home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/5.0.1/selenide-5.0.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/jenkins_home/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/var/jenkins_home/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/var/jenkins_home/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/var/jenkins_home/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/var/jenkins_home/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/var/jenkins_home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/var/jenkins_home/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RELEASE/spring-boot-starter-test-2.1.0.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test/2.0.5.RELEASE/spring-boot-test-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.5.RELEASE/spring-boot-test-autoconfigure-2.0.5.RELEASE.jar:/var/jenkins_home/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/var/jenkins_home/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/var/jenkins_home/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/var/jenkins_home/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar:/var/jenkins_home/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/jenkins_home/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/var/jenkins_home/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/jenkins_home/.m2/repository/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar:/var/jenkins_home/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:/var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/var/jenkins_home/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar, JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals, BUILD_NUMBER=10, BUILD_URL=http://localhost:30002/job/spring-petclinic-microservices/10/, HOSTNAME=45ed468bebea, GIT_URL=https://github.com/sten711/spring-petclinic-microservices, JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental, HOME=/var/jenkins_home}}]
+16:09:49.553 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+16:09:49.553 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'Inlined Test Properties' with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.5.RELEASE)
+
+2018-11-23 16:09:50.094  INFO 2641 --- [           main] c.r.p.vets.tests.VetResourcesITest       : Starting VetResourcesITest on 45ed468bebea with PID 2641 (started by jenkins in /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests)
+2018-11-23 16:09:50.096  INFO 2641 --- [           main] c.r.p.vets.tests.VetResourcesITest       : The following profiles are active: jenkins
+2018-11-23 16:09:50.146  INFO 2641 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d322cad: startup date [Fri Nov 23 16:09:50 UTC 2018]; root of context hierarchy
+2018-11-23 16:09:51.177  INFO 2641 --- [           main] c.r.p.vets.tests.VetResourcesITest       : Started VetResourcesITest in 1.621 seconds (JVM running for 4.587)
+2018-11-23 16:09:51.551  INFO 2641 --- [           main] c.c.selenide.drivercommands.LazyDriver   : No webdriver is bound to current thread: 1 - let's create a new webdriver
+2018-11-23 16:09:52.920  INFO 2641 --- [           main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 2.42 (since Google Chrome 70 is installed in your machine)
+2018-11-23 16:09:52.953  INFO 2641 --- [           main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as /var/jenkins_home/.m2/repository/webdriver/chromedriver/linux64/2.42/chromedriver
+Starting ChromeDriver 2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac) on port 22170
+Only local connections are allowed.
+[1542989393.537][SEVERE]: bind() returned an error, errno=99: Cannot assign requested address (99)
+2018-11-23 16:09:55.270  INFO 2641 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: OSS
+2018-11-23 16:09:55.310  INFO 2641 --- [           main] c.c.selenide.webdriver.BrowserResizer    : Set browser size to 1366x768
+2018-11-23 16:09:55.454  INFO 2641 --- [           main] c.c.selenide.webdriver.WebDriverFactory  : BrowserName=chrome Version=70.0.3538.110 Platform=LINUX
+2018-11-23 16:09:55.454  INFO 2641 --- [           main] c.c.selenide.webdriver.WebDriverFactory  : Selenide v. 5.0.1
+2018-11-23 16:09:55.454  INFO 2641 --- [           main] c.c.selenide.webdriver.WebDriverFactory  : Selenium WebDriver v. 3.14.0 build time: 2018-08-02T20:19:58.91Z
+2018-11-23 16:09:55.460  INFO 2641 --- [           main] c.c.s.d.CreateDriverCommand              : Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on LINUX (ceadf761459a0a87086c2533d13d576b)
+
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.006 s <<< FAILURE! - in com.roguewave.petclinic.vets.tests.VetResourcesITest
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] testOwnersEditOwner  Time elapsed: 8.867 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.roguewave.petclinic.vets.tests.VetResourcesITest.testOwnersEditOwner(VetResourcesITest.java:67)
+
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] testVetsAreLoaded  Time elapsed: 5.104 s  <<< FAILURE!
+java.lang.AssertionError: expected:<6> but was:<0>
+	at com.roguewave.petclinic.vets.tests.VetResourcesITest.testVetsAreLoaded(VetResourcesITest.java:50)
+
+2018-11-23 16:10:05.607  INFO 2641 --- [       Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d322cad: startup date [Fri Nov 23 16:09:50 UTC 2018]; root of context hierarchy
+[INFO] 
+[INFO] Results:
+[INFO] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failures: 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   VetResourcesITest.testOwnersEditOwner:67
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   VetResourcesITest.testVetsAreLoaded:50 expected:<6> but was:<0>
+[INFO] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.865 s
+[INFO] Finished at: 2018-11-23T16:10:06+00:00
+[INFO] Final Memory: 40M/253M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project spring-petclinic-e2e-tests: There are test failures.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Please refer to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-e2e-tests/target/surefire-reports for the individual test results.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4COe1SqgQ6lfAJgkodOu27uwbOW8A7D6M3ndx9y/Kk7FAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Performing Post build task...
+Match found for : : True
+Logical operation result is TRUE
+Running script  : docker-compose down
+[workspace] $ /bin/sh -xe /tmp/jenkins1511065206146029064.sh
++ docker-compose down
+Stopping admin-server      ... 
+Stopping visits-service    ... 
+Stopping vets-service      ... 
+Stopping customers-service ... 
+Stopping api-gateway       ... 
+Stopping discovery-server  ... 
+Stopping tracing-server    ... 
+Stopping config-server     ... 
+[8A[2KStopping admin-server      ... [32mdone[0m[8B[2A[2KStopping tracing-server    ... [32mdone[0m[2B[5A[2KStopping customers-service ... [32mdone[0m[5B[7A[2KStopping visits-service    ... [32mdone[0m[7B[4A[2KStopping api-gateway       ... [32mdone[0m[4B[6A[2KStopping vets-service      ... [32mdone[0m[6B[3A[2KStopping discovery-server  ... [32mdone[0m[3B[1A[2KStopping config-server     ... [32mdone[0m[1BRemoving admin-server      ... 
+Removing visits-service    ... 
+Removing vets-service      ... 
+Removing customers-service ... 
+Removing api-gateway       ... 
+Removing discovery-server  ... 
+Removing tracing-server    ... 
+Removing config-server     ... 
+[8A[2KRemoving admin-server      ... [32mdone[0m[8B[1A[2KRemoving config-server     ... [32mdone[0m[1B[5A[2KRemoving customers-service ... [32mdone[0m[5B[4A[2KRemoving api-gateway       ... [32mdone[0m[4B[2A[2KRemoving tracing-server    ... [32mdone[0m[2B[3A[2KRemoving discovery-server  ... [32mdone[0m[3B[6A[2KRemoving vets-service      ... [32mdone[0m[6B[7A[2KRemoving visits-service    ... [32mdone[0m[7BNetwork spring-petclinic-microservices_default is external, skipping
+POST BUILD TASK : SUCCESS
+END OF POST BUILD TASK : 0
+Finished: FAILURE

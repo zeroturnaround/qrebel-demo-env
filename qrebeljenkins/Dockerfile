@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.151
+FROM jenkins/jenkins:lts
 USER root
 
 
@@ -11,6 +11,24 @@ RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 RUN curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
 
+#Docker CE
+RUN apt-get update && \
+apt-get -y install apt-transport-https \
+     ca-certificates \
+     curl \
+     gnupg2 \
+     software-properties-common && \
+curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg > /tmp/dkey; apt-key add /tmp/dkey && \
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
+   $(lsb_release -cs) \
+   stable" && \
+apt-get update && \
+apt-get -y install docker-ce
+
+RUN usermod -a -G docker jenkins
+
+
 # Minimal Jenkins Plugins
 COPY --chown=jenkins:jenkins sources/qrebel-jenkins.hpi /var/jenkins_home/plugins/qrebel-jenkins.hpi
 RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker-workflow credentials-binding ws-cleanup greenballs
@@ -19,8 +37,16 @@ RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
 # Copy config
+COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/config.xml /var/jenkins_home/jobs/spring-petclinic-microservices/config.xml
 COPY --chown=jenkins:jenkins sources/config.xml /var/jenkins_home/jobs/QRebel-demo/config.xml
-COPY --chown=jenkins:jenkins sources/config-plugin.xml /var/jenkins_home/jobs/QRebel-demo-plugin/config.xml
+COPY --chown=jenkins:jenkins sources/config-plugin.xml /var/jenkins_home/jobs/QRebel-plugin/config.xml
+
+# Copy build history
+COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/lastStable /var/jenkins_home/jobs/spring-petclinic-microservices/lastStable
+COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/nextBuildNumber /var/jenkins_home/jobs/spring-petclinic-microservices/nextBuildNumber
+COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/lastSuccessful /var/jenkins_home/jobs/spring-petclinic-microservices/lastSuccessful
+COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/builds /var/jenkins_home/jobs/spring-petclinic-microservices/builds/
+
 
 RUN apt-get update && apt-get install -y maven
 RUN mkdir -p /home/jenkins

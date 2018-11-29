@@ -1,0 +1,11 @@
+commit 67b82b3c344e5a01ddedf05ccdd9eb77f6a14ab7
+tree c37dc65b8aa626d631247b148bb71c1955fe2071
+parent c8c629a4d01d75ed43c1c56bb77f57f9894efa0e
+author Sten <sten@Stens-MacBook.local> 2018-11-27 10:03:09 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-27 10:03:09 +0200
+
+    Try eager loading
+
+
+
+:100644 100644 e7de112c99e3cb7521c3b4a0e3aa49e1fa9c808d 190f79ec325f3689a23de76e42044e66605b3b80 M	spring-petclinic-api-gateway/src/main/resources/application.yml

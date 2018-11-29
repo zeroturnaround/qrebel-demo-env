@@ -1,0 +1,1610 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3c4da23ada0bef997558821352b11b25c1731daa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3c4da23ada0bef997558821352b11b25c1731daa
+Commit message: "Add QRebel agent"
+ > git rev-list --no-walk 55d7c75df117da5f75dee0c1a88122997bc18750 # timeout=10
+[workspace] $ mvn clean install -PbuildDocker
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-petclinic-microservices
+[INFO] spring-petclinic-admin-server
+[INFO] spring-petclinic-customers-service
+[INFO] spring-petclinic-vets-service
+[INFO] spring-petclinic-visits-service
+[INFO] spring-petclinic-config-server
+[INFO] spring-petclinic-discovery-server
+[INFO] spring-petclinic-api-gateway
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-microservices 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-microservices ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-microservices ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/spring-petclinic-microservices/2.0.5/spring-petclinic-microservices-2.0.5.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-admin-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-admin-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-admin-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:40:10+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/classes/git.properties] (for module spring-petclinic-admin-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-admin-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-admin-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-admin-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-admin-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-admin-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spring-petclinic-admin-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-admin-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-admin-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/docker/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-admin-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-admin-server
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  729.6kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  973.3kB/3.006MB
+[0B[1A[2Knull: Downloading [=======================>                           ]  1.391MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================================>         ]   2.47MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 7d0a358e76c3
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 514496e63cde
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> dd5c3f1646d4
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in 04702a4fff96
+Removing intermediate container 04702a4fff96
+ ---> d795dfc9ca72
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 45de9ab9c462
+Removing intermediate container 45de9ab9c462
+ ---> c30c45d0dffc
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in e956d9c135f8
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       2% |                               |   195k  0:00:42 ETA
+[0m
+[91mqrebel-agent.jar      43% |*************                  |  3683k  0:00:02 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container e956d9c135f8
+ ---> b087b3dce35b
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in 02d6517851b1
+Removing intermediate container 02d6517851b1
+ ---> 8a3a4c1ebeec
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 8a3a4c1ebeec
+Successfully tagged mszarlinski/spring-petclinic-admin-server:latest
+[INFO] Built mszarlinski/spring-petclinic-admin-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-customers-service 2.0.5
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.1/maven-jar-plugin-2.1.pom
+3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.1/maven-jar-plugin-2.1.pom (3 KB at 1.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/3/maven-plugins-3.pom
+3/7 KB   5/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/3/maven-plugins-3.pom (7 KB at 137.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom
+3/10 KB   5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom (10 KB at 238.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
+3/4 KB     4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (4 KB at 77.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.1/maven-jar-plugin-2.1.jar
+3/19 KB   5/19 KB   8/19 KB   11/19 KB   13/19 KB   16/19 KB   19/19 KB   19/19 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.1/maven-jar-plugin-2.1.jar (19 KB at 396.8 KB/sec)
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-customers-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-customers-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:40:34+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/classes/git.properties] (for module spring-petclinic-customers-service)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-customers-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-customers-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-customers-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-customers-service ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-customers-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-customers-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-customers-service ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+601/601 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 11.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+3/9 KB      5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (9 KB at 208.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom (2 KB at 43.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom (2 KB at 38.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.pom
+3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.pom (3 KB at 63.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (8 KB at 181.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom (2 KB at 33.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom (2 KB at 29.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.pom
+723/723 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.pom (723 B at 16.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.pom (2 KB at 31.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/3/maven-shared-components-3.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/3/maven-shared-components-3.pom (2 KB at 46.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.pom (2 KB at 26.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.6/plexus-components-1.1.6.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.6/plexus-components-1.1.6.pom (2 KB at 47.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom (8 KB at 168.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.2/plexus-utils-1.2.pom
+767/767 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.2/plexus-utils-1.2.pom (767 B at 18.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.5/plexus-1.0.5.pom
+3/6 KB      6/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.5/plexus-1.0.5.pom (6 KB at 134.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+3/10 KB   5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom (10 KB at 206.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar
+3/10 KB    5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar (10 KB at 135.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar
+3/50 KB    6/50 KB   9/50 KB   11/50 KB   11/50 KB   3/77 KB   11/50 KB   5/77 KB   11/50 KB   8/77 KB   11/50 KB   11/77 KB   11/50 KB   13/77 KB   11/50 KB   13/77 KB   3/103 KB   11/50 KB   13/77 KB   6/103 KB   11/50 KB   13/77 KB   9/103 KB   11/50 KB   13/77 KB   11/103 KB   11/50 KB   13/77 KB   11/103 KB   3/30 KB   11/50 KB   13/77 KB   11/103 KB   5/30 KB   11/50 KB   13/77 KB   11/103 KB   8/30 KB   11/50 KB   13/77 KB   11/103 KB   11/30 KB   11/50 KB   13/77 KB   11/103 KB   13/30 KB   14/50 KB   13/77 KB   11/103 KB   13/30 KB   14/50 KB   3/21 KB   13/77 KB   11/103 KB   13/30 KB   14/50 KB   5/21 KB   13/77 KB   11/103 KB   13/30 KB   14/50 KB   8/21 KB   13/77 KB   11/103 KB   13/30 KB   14/50 KB   11/21 KB   13/77 KB   11/103 KB   13/30 KB   16/50 KB   11/21 KB   13/77 KB   11/103 KB   13/30 KB   16/50 KB   13/21 KB   13/77 KB   11/103 KB   13/30 KB   16/50 KB   16/21 KB   13/77 KB   11/103 KB   13/30 KB   19/50 KB   16/21 KB   13/77 KB   11/103 KB   13/30 KB   19/50 KB   19/21 KB   13/77 KB   11/103 KB   13/30 KB   19/50 KB   19/21 KB   16/77 KB   11/103 KB   13/30 KB   19/50 KB   21/21 KB   16/77 KB   11/103 KB   13/30 KB   22/50 KB   21/21 KB   16/77 KB   11/103 KB   13/30 KB   22/50 KB   21/21 KB   19/77 KB   11/103 KB   13/30 KB   25/50 KB   21/21 KB   19/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   19/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   21/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   24/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   27/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   29/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   32/77 KB   11/103 KB   13/30 KB   27/50 KB   21/21 KB   32/77 KB   14/103 KB   16/30 KB   27/50 KB   21/21 KB   32/77 KB   14/103 KB   16/30 KB   27/50 KB   21/21 KB   32/77 KB   16/103 KB   16/30 KB   27/50 KB   21/21 KB   32/77 KB   16/103 KB   19/30 KB   27/50 KB   21/21 KB   32/77 KB   16/103 KB   21/30 KB   27/50 KB   21/21 KB   32/77 KB   19/103 KB   21/30 KB   27/50 KB   21/21 KB   32/77 KB   19/103 KB   24/30 KB   27/50 KB   21/21 KB   32/77 KB   22/103 KB   24/30 KB   27/50 KB   21/21 KB   32/77 KB   22/103 KB   27/30 KB   27/50 KB   21/21 KB   32/77 KB   25/103 KB   27/30 KB   27/50 KB   21/21 KB   32/77 KB   25/103 KB   29/30 KB   27/50 KB   21/21 KB   32/77 KB   27/103 KB   29/30 KB   27/50 KB   21/21 KB   32/77 KB   30/103 KB   29/30 KB   30/50 KB   21/21 KB   32/77 KB   30/103 KB   29/30 KB   32/50 KB   21/21 KB   32/77 KB   32/103 KB   29/30 KB   32/50 KB   21/21 KB   32/77 KB   32/103 KB   29/30 KB   32/50 KB   21/21 KB   32/77 KB   32/103 KB   30/30 KB   36/50 KB   21/21 KB   32/77 KB   32/103 KB   30/30 KB   40/50 KB   21/21 KB   32/77 KB   32/103 KB   30/30 KB   44/50 KB   21/21 KB   32/77 KB   32/103 KB   30/30 KB   48/50 KB   21/21 KB   32/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   32/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   36/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   40/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   44/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   48/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   52/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   56/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   60/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   64/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   68/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   72/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   76/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   32/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   36/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   40/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   44/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   48/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   52/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   56/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   60/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   64/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   68/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   72/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   76/103 KB   30/30 KB   50/50 KB   21/21 KB   77/77 KB   80/103 KB   30/30 KB                                                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar (21 KB at 192.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar
+                                                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar (30 KB at 237.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar
+                                                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar (50 KB at 433.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar
+77/77 KB   84/103 KB                                    77/77 KB   88/103 KB   77/77 KB   92/103 KB   77/77 KB   96/103 KB   77/77 KB   100/103 KB   77/77 KB   103/103 KB                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar (77 KB at 598.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
+3/160 KB   103/103 KB   5/160 KB   103/103 KB   8/160 KB   103/103 KB   11/160 KB   103/103 KB   13/160 KB   103/103 KB   13/160 KB   3/77 KB   103/103 KB   16/160 KB   3/77 KB   103/103 KB   16/160 KB   5/77 KB   103/103 KB   16/160 KB   8/77 KB   103/103 KB   16/160 KB   11/77 KB   103/103 KB   16/160 KB   13/77 KB   103/103 KB   16/160 KB   16/77 KB   103/103 KB   16/160 KB   19/77 KB   103/103 KB   16/160 KB   21/77 KB   103/103 KB   16/160 KB   24/77 KB   103/103 KB   16/160 KB   27/77 KB   103/103 KB   16/160 KB   29/77 KB   103/103 KB   16/160 KB   32/77 KB   103/103 KB                                       Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar (103 KB at 690.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
+16/160 KB   32/77 KB   4/191 KB     16/160 KB   32/77 KB   8/191 KB   16/160 KB   32/77 KB   12/191 KB   16/160 KB   32/77 KB   16/191 KB   16/160 KB   32/77 KB   20/191 KB   16/160 KB   32/77 KB   24/191 KB   16/160 KB   32/77 KB   28/191 KB   16/160 KB   32/77 KB   32/191 KB   16/160 KB   32/77 KB   36/191 KB   16/160 KB   32/77 KB   40/191 KB   16/160 KB   32/77 KB   44/191 KB   16/160 KB   32/77 KB   48/191 KB   16/160 KB   32/77 KB   52/191 KB   16/160 KB   32/77 KB   56/191 KB   16/160 KB   32/77 KB   60/191 KB   16/160 KB   32/77 KB   64/191 KB   19/160 KB   32/77 KB   64/191 KB   21/160 KB   32/77 KB   64/191 KB   21/160 KB   32/77 KB   4/10 KB   64/191 KB   24/160 KB   32/77 KB   4/10 KB   64/191 KB   24/160 KB   32/77 KB   8/10 KB   64/191 KB   27/160 KB   32/77 KB   8/10 KB   64/191 KB   27/160 KB   32/77 KB   10/10 KB   64/191 KB   29/160 KB   32/77 KB   10/10 KB   64/191 KB   32/160 KB   32/77 KB   10/10 KB   64/191 KB   36/160 KB   32/77 KB   10/10 KB   64/191 KB   40/160 KB   32/77 KB   10/10 KB   64/191 KB   44/160 KB   32/77 KB   10/10 KB   64/191 KB   48/160 KB   32/77 KB   10/10 KB   64/191 KB   52/160 KB   32/77 KB   10/10 KB   64/191 KB   56/160 KB   32/77 KB   10/10 KB   64/191 KB   60/160 KB   32/77 KB   10/10 KB   64/191 KB   64/160 KB   32/77 KB   10/10 KB   64/191 KB   64/160 KB   36/77 KB   10/10 KB   64/191 KB   64/160 KB   40/77 KB   10/10 KB   64/191 KB   64/160 KB   44/77 KB   10/10 KB   64/191 KB   64/160 KB   48/77 KB   10/10 KB   64/191 KB   64/160 KB   52/77 KB   10/10 KB   64/191 KB   64/160 KB   56/77 KB   10/10 KB   64/191 KB   64/160 KB   60/77 KB   10/10 KB   64/191 KB   64/160 KB   64/77 KB   10/10 KB   64/191 KB   64/160 KB   68/77 KB   10/10 KB   64/191 KB   64/160 KB   72/77 KB   10/10 KB   64/191 KB   64/160 KB   76/77 KB   10/10 KB   64/191 KB   64/160 KB   77/77 KB   10/10 KB   64/191 KB   64/160 KB   77/77 KB   10/10 KB   68/191 KB   64/160 KB   77/77 KB   10/10 KB   72/191 KB   64/160 KB   77/77 KB   10/10 KB   76/191 KB   64/160 KB   77/77 KB   10/10 KB   80/191 KB   68/160 KB   77/77 KB   10/10 KB   80/191 KB   72/160 KB   77/77 KB   10/10 KB   80/191 KB   76/160 KB   77/77 KB   10/10 KB   80/191 KB   76/160 KB   77/77 KB   10/10 KB   84/191 KB   80/160 KB   77/77 KB   10/10 KB   84/191 KB   80/160 KB   77/77 KB   10/10 KB   88/191 KB   80/160 KB   77/77 KB   10/10 KB   92/191 KB   80/160 KB   77/77 KB   10/10 KB   96/191 KB   84/160 KB   77/77 KB   10/10 KB   96/191 KB   88/160 KB   77/77 KB   10/10 KB   96/191 KB   92/160 KB   77/77 KB   10/10 KB   96/191 KB   96/160 KB   77/77 KB   10/10 KB   96/191 KB   96/160 KB   77/77 KB   10/10 KB   100/191 KB   96/160 KB   77/77 KB   10/10 KB   104/191 KB   96/160 KB   77/77 KB   10/10 KB   108/191 KB   100/160 KB   77/77 KB   10/10 KB   108/191 KB   100/160 KB   77/77 KB   10/10 KB   112/191 KB   104/160 KB   77/77 KB   10/10 KB   112/191 KB   108/160 KB   77/77 KB   10/10 KB   112/191 KB   112/160 KB   77/77 KB   10/10 KB   112/191 KB   112/160 KB   77/77 KB   10/10 KB   116/191 KB   112/160 KB   77/77 KB   10/10 KB   120/191 KB   112/160 KB   77/77 KB   10/10 KB   124/191 KB   116/160 KB   77/77 KB   10/10 KB   124/191 KB   116/160 KB   77/77 KB   10/10 KB   128/191 KB   120/160 KB   77/77 KB   10/10 KB   128/191 KB   120/160 KB   77/77 KB   10/10 KB   128/191 KB   4/139 KB   124/160 KB   77/77 KB   10/10 KB   128/191 KB   4/139 KB   124/160 KB   77/77 KB   10/10 KB   128/191 KB   8/139 KB   124/160 KB   77/77 KB   10/10 KB   128/191 KB   12/139 KB   128/160 KB   77/77 KB   10/10 KB   128/191 KB   12/139 KB   128/160 KB   77/77 KB   10/10 KB   128/191 KB   16/139 KB   128/160 KB   77/77 KB   10/10 KB   132/191 KB   16/139 KB   128/160 KB   77/77 KB   10/10 KB   136/191 KB   16/139 KB   128/160 KB   77/77 KB   10/10 KB   140/191 KB   16/139 KB   128/160 KB   77/77 KB   10/10 KB   144/191 KB   16/139 KB   128/160 KB   77/77 KB   10/10 KB   144/191 KB   20/139 KB   128/160 KB   77/77 KB   10/10 KB   148/191 KB   20/139 KB   128/160 KB   77/77 KB   10/10 KB   152/191 KB   20/139 KB   128/160 KB   77/77 KB   10/10 KB   156/191 KB   24/139 KB   128/160 KB   77/77 KB   10/10 KB   152/191 KB   24/139 KB   128/160 KB   77/77 KB   10/10 KB   160/191 KB   24/139 KB   128/160 KB   77/77 KB   10/10 KB   160/191 KB   28/139 KB   128/160 KB   77/77 KB   10/10 KB   160/191 KB   32/139 KB   128/160 KB   77/77 KB   10/10 KB   164/191 KB   32/139 KB   128/160 KB   77/77 KB   10/10 KB   164/191 KB   36/139 KB   128/160 KB   77/77 KB   10/10 KB   168/191 KB   36/139 KB   128/160 KB   77/77 KB   10/10 KB   168/191 KB   40/139 KB   128/160 KB   77/77 KB   10/10 KB   172/191 KB   44/139 KB   128/160 KB   77/77 KB   10/10 KB   172/191 KB   44/139 KB   128/160 KB   77/77 KB   10/10 KB   172/191 KB   48/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   48/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   52/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   56/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   60/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   64/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   68/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   72/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   76/139 KB   128/160 KB   77/77 KB   10/10 KB   176/191 KB   80/139 KB   128/160 KB   77/77 KB   10/10 KB   180/191 KB   80/139 KB   128/160 KB   77/77 KB   10/10 KB   184/191 KB   80/139 KB   128/160 KB   77/77 KB   10/10 KB   188/191 KB   80/139 KB   128/160 KB   77/77 KB   10/10 KB   191/191 KB   80/139 KB   132/160 KB   77/77 KB   10/10 KB   191/191 KB   80/139 KB   136/160 KB   77/77 KB   10/10 KB   191/191 KB   80/139 KB   140/160 KB   77/77 KB   10/10 KB   191/191 KB   80/139 KB   144/160 KB   77/77 KB   10/10 KB   191/191 KB   80/139 KB   148/160 KB   77/77 KB   10/10 KB   191/191 KB   80/139 KB                                                               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar (10 KB at 61.2 KB/sec)
+152/160 KB   77/77 KB   191/191 KB   80/139 KB              Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+156/160 KB   77/77 KB   191/191 KB   80/139 KB   160/160 KB   77/77 KB   191/191 KB   80/139 KB   160/160 KB   77/77 KB   191/191 KB   80/139 KB   160/160 KB   77/77 KB   191/191 KB   84/139 KB   160/160 KB   77/77 KB   191/191 KB   88/139 KB   160/160 KB   77/77 KB   191/191 KB   92/139 KB   160/160 KB   77/77 KB   191/191 KB   96/139 KB                                                    Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar (77 KB at 449.8 KB/sec)
+160/160 KB   191/191 KB   100/139 KB             160/160 KB   191/191 KB   104/139 KB   160/160 KB   191/191 KB   108/139 KB   160/160 KB   191/191 KB   112/139 KB   160/160 KB   191/191 KB   116/139 KB   160/160 KB   191/191 KB   120/139 KB   160/160 KB   191/191 KB   124/139 KB   160/160 KB   191/191 KB   128/139 KB   160/160 KB   191/191 KB   132/139 KB   160/160 KB   191/191 KB   136/139 KB   160/160 KB   191/191 KB   139/139 KB                                          Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar (191 KB at 1084.4 KB/sec)
+160/160 KB   4/203 KB   139/139 KB     160/160 KB   8/203 KB   139/139 KB   160/160 KB   12/203 KB   139/139 KB   160/160 KB   16/203 KB   139/139 KB   160/160 KB   20/203 KB   139/139 KB   160/160 KB   24/203 KB   139/139 KB   160/160 KB   28/203 KB   139/139 KB   160/160 KB   32/203 KB   139/139 KB   160/160 KB   36/203 KB   139/139 KB   160/160 KB   40/203 KB   139/139 KB   160/160 KB   44/203 KB   139/139 KB   160/160 KB   48/203 KB   139/139 KB                                         52/203 KB   139/139 KB                56/203 KB   139/139 KB   Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar (160 KB at 864.7 KB/sec)
+60/203 KB   139/139 KB   64/203 KB   139/139 KB   68/203 KB   139/139 KB   72/203 KB   139/139 KB   76/203 KB   139/139 KB   80/203 KB   139/139 KB   84/203 KB   139/139 KB   88/203 KB   139/139 KB   92/203 KB   139/139 KB   96/203 KB   139/139 KB                            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar (139 KB at 730.0 KB/sec)
+100/203 KB               104/203 KB   108/203 KB   112/203 KB   116/203 KB   120/203 KB   124/203 KB   128/203 KB   132/203 KB   136/203 KB   140/203 KB   144/203 KB   148/203 KB   152/203 KB   156/203 KB   160/203 KB   164/203 KB   168/203 KB   172/203 KB   176/203 KB   180/203 KB   184/203 KB   188/203 KB   192/203 KB   196/203 KB   200/203 KB   203/203 KB                Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar (203 KB at 913.8 KB/sec)
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-customers-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-customers-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.0.5/spring-petclinic-customers-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.0.5/spring-petclinic-customers-service-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-customers-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/docker/spring-petclinic-customers-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-customers-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-customers-service
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.287MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.053MB/3.006MB
+[0B[1A[2Knull: Downloading [================================================>  ]  2.891MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 19c3e9e11645
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> f8ba86332e68
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 2f6d84ca54f0
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in afa3d5a84fbf
+Removing intermediate container afa3d5a84fbf
+ ---> 46a1fa183086
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 046bc9c648df
+Removing intermediate container 046bc9c648df
+ ---> b0f1883d96aa
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in ae4981f8b52c
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       3% |*                              |   323k  0:00:25 ETA
+[0m
+[91mqrebel-agent.jar      43% |*************                  |  3747k  0:00:02 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container ae4981f8b52c
+ ---> e420a0114fc6
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in df26afe582ac
+Removing intermediate container df26afe582ac
+ ---> 642c071e36b0
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 642c071e36b0
+Successfully tagged mszarlinski/spring-petclinic-customers-service:latest
+[INFO] Built mszarlinski/spring-petclinic-customers-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-vets-service 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-vets-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-vets-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:40:52+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/classes/git.properties] (for module spring-petclinic-vets-service)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-vets-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-vets-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-vets-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-vets-service ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-vets-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-vets-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-vets-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-vets-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-vets-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/vets/spring-petclinic-vets-service/2.0.5/spring-petclinic-vets-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/vets/spring-petclinic-vets-service/2.0.5/spring-petclinic-vets-service-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-vets-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/docker/spring-petclinic-vets-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-vets-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-vets-service
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [===================>                               ]  1.182MB/3.006MB
+[0B[1A[2Knull: Downloading [=================================>                 ]  2.018MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> bb94d25c8e9b
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> c4aa27e0136a
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> dd01580e986a
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in 7635796d8bc9
+Removing intermediate container 7635796d8bc9
+ ---> 969a96a5c8d7
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in ae4513ba6ae9
+Removing intermediate container ae4513ba6ae9
+ ---> f3df28200012
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 9f9f8d3be7db
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       8% |**                             |   768k  0:00:10 ETA
+[0m
+[91mqrebel-agent.jar      61% |******************             |  5214k  0:00:01 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 9f9f8d3be7db
+ ---> 0faa30a0b750
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in 69c6f5224795
+Removing intermediate container 69c6f5224795
+ ---> 3bcde6d319b6
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 3bcde6d319b6
+Successfully tagged mszarlinski/spring-petclinic-vets-service:latest
+[INFO] Built mszarlinski/spring-petclinic-vets-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-visits-service 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-visits-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-visits-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:41:09+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/classes/git.properties] (for module spring-petclinic-visits-service)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-visits-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-visits-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-visits-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-visits-service ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-visits-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-visits-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-visits-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-visits-service ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-visits-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/visits/spring-petclinic-visits-service/2.0.5/spring-petclinic-visits-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/visits/spring-petclinic-visits-service/2.0.5/spring-petclinic-visits-service-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-visits-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/docker/spring-petclinic-visits-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-visits-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-visits-service
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [===>                                               ]  207.4kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  311.8kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  346.7kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  381.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  485.9kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  520.7kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  555.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  590.4kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]  625.2kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  729.6kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  764.4kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  799.3kB/3.006MB
+[0B[1A[2Knull: Downloading [==============>                                    ]  868.9kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  903.7kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  938.5kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  973.3kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  1.008MB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.043MB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.078MB/3.006MB
+[0B[1A[2Knull: Downloading [==================>                                ]  1.113MB/3.006MB
+[0B[1A[2Knull: Downloading [===================>                               ]  1.147MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.217MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.252MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.287MB/3.006MB
+[0B[1A[2Knull: Downloading [======================>                            ]  1.356MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================>                           ]  1.426MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.461MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================>                         ]   1.53MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================>                        ]    1.6MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]  1.635MB/3.006MB
+[0B[1A[2Knull: Downloading [============================>                      ]  1.704MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================>                     ]  1.774MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================>                   ]  1.879MB/3.006MB
+[0B[1A[2Knull: Downloading [================================>                  ]  1.948MB/3.006MB
+[0B[1A[2Knull: Downloading [=================================>                 ]  2.018MB/3.006MB
+[0B[1A[2Knull: Downloading [===================================>               ]  2.122MB/3.006MB
+[0B[1A[2Knull: Downloading [====================================>              ]  2.192MB/3.006MB
+[0B[1A[2Knull: Downloading [======================================>            ]  2.296MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================================>           ]  2.401MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================================>         ]  2.505MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================================>       ]   2.61MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================================>     ]  2.714MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================================>    ]  2.819MB/3.006MB
+[0B[1A[2Knull: Downloading [================================================>  ]  2.923MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 4e4a331b9a09
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> bbce33f42af2
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 4f3326e37687
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in af1d894dc09a
+Removing intermediate container af1d894dc09a
+ ---> 341ba3f77ffb
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 463b78287aea
+Removing intermediate container 463b78287aea
+ ---> 72e9a3155c4e
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 134acdc86522
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       9% |**                             |   773k  0:00:10 ETA
+[0m
+[91mqrebel-agent.jar      71% |**********************         |  6133k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 134acdc86522
+ ---> 3c3ab5476115
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in 533568c7ff57
+Removing intermediate container 533568c7ff57
+ ---> 53ea88b45d55
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 53ea88b45d55
+Successfully tagged mszarlinski/spring-petclinic-visits-service:latest
+[INFO] Built mszarlinski/spring-petclinic-visits-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-config-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-config-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-config-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:41:31+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/classes/git.properties] (for module spring-petclinic-config-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-config-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-config-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-config-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-config-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-config-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-config-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-config-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-config-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-config-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.0.5/spring-petclinic-config-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.0.5/spring-petclinic-config-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-config-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/docker/spring-petclinic-config-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-config-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-config-server
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  311.8kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  346.7kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  381.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  485.9kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  520.7kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  590.4kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]    660kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  764.4kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  799.3kB/3.006MB
+[0B[1A[2Knull: Downloading [==============>                                    ]  868.9kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  938.5kB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.043MB/3.006MB
+[0B[1A[2Knull: Downloading [==================>                                ]  1.113MB/3.006MB
+[0B[1A[2Knull: Downloading [===================>                               ]  1.182MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.252MB/3.006MB
+[0B[1A[2Knull: Downloading [======================>                            ]  1.356MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.461MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================>                        ]  1.565MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]  1.635MB/3.006MB
+[0B[1A[2Knull: Downloading [============================>                      ]  1.739MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================>                   ]  1.879MB/3.006MB
+[0B[1A[2Knull: Downloading [================================>                  ]  1.983MB/3.006MB
+[0B[1A[2Knull: Downloading [===================================>               ]  2.122MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================================>             ]  2.262MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================================>           ]  2.401MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================================>        ]   2.54MB/3.006MB
+[0B[1A[2Knull: Downloading [============================================>      ]  2.679MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================================>    ]  2.819MB/3.006MB
+[0B[1A[2Knull: Downloading [=================================================> ]  2.993MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 9967849c647b
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> b036d20a9fa2
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 83001de2d1d5
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in 3b3ad0f43749
+Removing intermediate container 3b3ad0f43749
+ ---> 3deb7b874119
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 6ea80a3fea59
+Removing intermediate container 6ea80a3fea59
+ ---> 1c61c84a13e3
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 3614975963ae
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       8% |**                             |   757k  0:00:10 ETA
+[0m
+[91mqrebel-agent.jar      55% |*****************              |  4757k  0:00:01 ETA
+[0m
+[91mqrebel-agent.jar      96% |*****************************  |  8229k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA[0m
+[91m
+[0m
+[91m
+[0m
+Removing intermediate container 3614975963ae
+ ---> ee7644ae46b3
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in 97bfe4f052eb
+Removing intermediate container 97bfe4f052eb
+ ---> 41983b4b704a
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 41983b4b704a
+Successfully tagged mszarlinski/spring-petclinic-config-server:latest
+[INFO] Built mszarlinski/spring-petclinic-config-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-discovery-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-discovery-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-discovery-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:41:49+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/classes/git.properties] (for module spring-petclinic-discovery-server)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-discovery-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-discovery-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-discovery-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-discovery-server ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-discovery-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-discovery-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-discovery-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-discovery-server ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-discovery-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.0.5/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.0.5/spring-petclinic-discovery-server-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-discovery-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/docker/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-discovery-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-discovery-server
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  137.8kB/3.006MB
+[0B[1A[2Knull: Downloading [==>                                                ]  172.6kB/3.006MB
+[0B[1A[2Knull: Downloading [===>                                               ]  207.4kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]    277kB/3.006MB
+[0B[1A[2Knull: Downloading [=====>                                             ]  311.8kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  381.5kB/3.006MB
+[0B[1A[2Knull: Downloading [======>                                            ]  416.3kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [========>                                          ]  520.7kB/3.006MB
+[0B[1A[2Knull: Downloading [=========>                                         ]  555.5kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]  625.2kB/3.006MB
+[0B[1A[2Knull: Downloading [==========>                                        ]    660kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [============>                                      ]  764.4kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  799.3kB/3.006MB
+[0B[1A[2Knull: Downloading [=============>                                     ]  834.1kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  903.7kB/3.006MB
+[0B[1A[2Knull: Downloading [===============>                                   ]  938.5kB/3.006MB
+[0B[1A[2Knull: Downloading [================>                                  ]  1.008MB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.043MB/3.006MB
+[0B[1A[2Knull: Downloading [=================>                                 ]  1.078MB/3.006MB
+[0B[1A[2Knull: Downloading [===================>                               ]  1.147MB/3.006MB
+[0B[1A[2Knull: Downloading [===================>                               ]  1.182MB/3.006MB
+[0B[1A[2Knull: Downloading [====================>                              ]  1.252MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.287MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.321MB/3.006MB
+[0B[1A[2Knull: Downloading [======================>                            ]  1.356MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================>                           ]  1.391MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================>                           ]  1.426MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.461MB/3.006MB
+[0B[1A[2Knull: Downloading [========================>                          ]  1.496MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================>                         ]   1.53MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================>                        ]  1.565MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================>                        ]    1.6MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================>                       ]   1.67MB/3.006MB
+[0B[1A[2Knull: Downloading [============================>                      ]  1.704MB/3.006MB
+[0B[1A[2Knull: Downloading [============================>                      ]  1.739MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================>                    ]  1.809MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================>                    ]  1.844MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================>                   ]  1.913MB/3.006MB
+[0B[1A[2Knull: Downloading [================================>                  ]  1.948MB/3.006MB
+[0B[1A[2Knull: Downloading [================================>                  ]  1.983MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.053MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================>                ]  2.087MB/3.006MB
+[0B[1A[2Knull: Downloading [===================================>               ]  2.157MB/3.006MB
+[0B[1A[2Knull: Downloading [====================================>              ]  2.192MB/3.006MB
+[0B[1A[2Knull: Downloading [=====================================>             ]  2.227MB/3.006MB
+[0B[1A[2Knull: Downloading [======================================>            ]  2.296MB/3.006MB
+[0B[1A[2Knull: Downloading [======================================>            ]  2.331MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================================>           ]  2.366MB/3.006MB
+[0B[1A[2Knull: Downloading [=======================================>           ]  2.401MB/3.006MB
+[0B[1A[2Knull: Downloading [========================================>          ]  2.436MB/3.006MB
+[0B[1A[2Knull: Downloading [=========================================>         ]   2.47MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================================>        ]   2.54MB/3.006MB
+[0B[1A[2Knull: Downloading [==========================================>        ]  2.575MB/3.006MB
+[0B[1A[2Knull: Downloading [===========================================>       ]   2.61MB/3.006MB
+[0B[1A[2Knull: Downloading [============================================>      ]  2.679MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================================>     ]  2.714MB/3.006MB
+[0B[1A[2Knull: Downloading [=============================================>     ]  2.749MB/3.006MB
+[0B[1A[2Knull: Downloading [==============================================>    ]  2.819MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================================>   ]  2.853MB/3.006MB
+[0B[1A[2Knull: Downloading [================================================>  ]  2.923MB/3.006MB
+[0B[1A[2Knull: Downloading [=================================================> ]  2.958MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> d3ef7bffb494
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 308621095004
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> ae0cfb0383ba
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in 5ba6a46526d4
+Removing intermediate container 5ba6a46526d4
+ ---> b3e32cae9b3d
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 8ffb317f16c4
+Removing intermediate container 8ffb317f16c4
+ ---> 0fd3b103ea12
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 1b4aa3b64a98
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       0% |                               |    84k  0:01:40 ETA
+[0m
+[91mqrebel-agent.jar    [0m
+[91m  21%[0m
+[91m |******                         |[0m
+[91m  1842k[0m
+[91m  0:00:07 ETA[0m
+[91m
+[0m
+[91mqrebel-agent.jar      50% |***************                |  4354k  0:00:02 ETA
+[0m
+[91mqrebel-agent.jar      96% |*****************************  |  8242k  0:00:00 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 1b4aa3b64a98
+ ---> af3a048a8aea
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in 98a8dd0207c5
+Removing intermediate container 98a8dd0207c5
+ ---> c62cd5db9902
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built c62cd5db9902
+Successfully tagged mszarlinski/spring-petclinic-discovery-server:latest
+[INFO] Built mszarlinski/spring-petclinic-discovery-server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-api-gateway 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-api-gateway ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-api-gateway ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] git.commit.id.describe 3c4da23
+[INFO] git.commit.id 3c4da23ada0bef997558821352b11b25c1731daa
+[INFO] git.commit.id.abbrev 3c4da23
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full Add QRebel agent
+[INFO] git.commit.message.short Add QRebel agent
+[INFO] git.commit.time 2018-11-23T14:29:07+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [3c4da23ada0bef997558821352b11b25c1731daa]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 612
+[INFO] git.build.time 2018-11-23T14:42:10+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 45ed468bebea
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short 3c4da23
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/git.properties] (for module spring-petclinic-api-gateway)...
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-api-gateway ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- wro4j-maven-plugin:1.8.0:run (default) @ spring-petclinic-api-gateway ---
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/me/n4u/sass/sass-gems/maven-metadata.xml
+             [INFO] /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/src/main/less
+[INFO] Executing the mojo: 
+[INFO] Wro4j Model path: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/src/main/wro/wro.xml
+[INFO] targetGroups: null
+[INFO] minimize: true
+[INFO] ignoreMissingResources: null
+[INFO] parallelProcessing: false
+[INFO] buildDirectory: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] destinationFolder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] cssDestinationFolder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/static/css
+[INFO] The following groups will be processed: [petclinic]
+[INFO] folder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/static/css
+[INFO] processing group: petclinic.css
+[8mha:////4K+0M8tTBOVJrRck2GmeRlixML2o3K8XMzUiz93AFcz/AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Less warnings are:
+[8mha:////4K+0M8tTBOVJrRck2GmeRlixML2o3K8XMzUiz93AFcz/AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 10:1 Cannot link source map. Css result location is not know and could not be deduced from input less source..
+[INFO] file size: petclinic.css -> 152551 bytes
+[INFO] /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes/static/css/petclinic.css (152551 bytes)
+[INFO] folder: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target
+[INFO] processing group: petclinic.js
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-api-gateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 48 resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-api-gateway ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/classes
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-api-gateway ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-api-gateway ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-api-gateway ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-api-gateway ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-api-gateway ---
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-api-gateway ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.0.5/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.0.5/spring-petclinic-api-gateway-2.0.5.pom
+[INFO] 
+[8mha:////4DZXtcfWAsuem5gXXjfsk/SF7Kc0KqO4Lm6Xo+8KMn7/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-api-gateway ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/docker/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-microservices/workspace/spring-petclinic-api-gateway/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-api-gateway
+Step 1/14 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/14 : VOLUME /tmp
+
+ ---> Using cache
+ ---> fb894c7463a3
+Step 3/14 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 628ebf788e0a
+Step 4/14 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> be568feb36bd
+Step 5/14 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> 221217976e23
+Step 6/14 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 8fda1616004f
+Step 7/14 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+[1A[2Knull: Downloading [=>                                                 ]  68.12kB/3.006MB
+[0B[1A[2Knull: Downloading [=>                                                 ]  102.9kB/3.006MB
+[0B[1A[2Knull: Downloading [====>                                              ]  242.2kB/3.006MB
+[0B[1A[2Knull: Downloading [=======>                                           ]  451.1kB/3.006MB
+[0B[1A[2Knull: Downloading [===========>                                       ]  694.8kB/3.006MB
+[0B[1A[2Knull: Downloading [=====================>                             ]  1.287MB/3.006MB
+[0B[1A[2Knull: Downloading [===============================================>   ]  2.863MB/3.006MB
+[0B[1A[2Knull: Downloading [==================================================>]  3.006MB/3.006MB
+[0B
+ ---> Using cache
+ ---> 53699962ba1c
+Step 8/14 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 17d82d3afef9
+Step 9/14 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> c43f3bb121cd
+Step 10/14 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> ee745368c00d
+Step 11/14 : RUN touch /app.jar
+
+ ---> Running in ef3c50d587ad
+Removing intermediate container ef3c50d587ad
+ ---> b7d76a1331ed
+Step 12/14 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 42659a225aa1
+Removing intermediate container 42659a225aa1
+ ---> 3aef94879120
+Step 13/14 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 64e15a3999b2
+[91mConnecting to hub.qrebel.com (54.81.134.46:443)
+[0m
+[91mqrebel-agent.jar       0% |                               |    11k  0:12:55 ETA
+[0m
+[91mqrebel-agent.jar      16% |*****                          |  1427k  0:00:09 ETA
+[0m
+[91mqrebel-agent.jar      55% |*****************              |  4755k  0:00:02 ETA
+[0m
+[91mqrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+[0m
+Removing intermediate container 64e15a3999b2
+ ---> 3cdd446a92ac
+Step 14/14 : ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar"]
+
+ ---> Running in 9b42fee3fe1c
+Removing intermediate container 9b42fee3fe1c
+ ---> 2192d35c8737
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 2192d35c8737
+Successfully tagged mszarlinski/spring-petclinic-api-gateway:latest
+[INFO] Built mszarlinski/spring-petclinic-api-gateway
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spring-petclinic-microservices ..................... SUCCESS [  0.547 s]
+[INFO] spring-petclinic-admin-server ...................... SUCCESS [ 24.263 s]
+[INFO] spring-petclinic-customers-service ................. SUCCESS [ 19.912 s]
+[INFO] spring-petclinic-vets-service ...................... SUCCESS [ 16.770 s]
+[INFO] spring-petclinic-visits-service .................... SUCCESS [ 22.953 s]
+[INFO] spring-petclinic-config-server ..................... SUCCESS [ 17.089 s]
+[INFO] spring-petclinic-discovery-server .................. SUCCESS [ 21.413 s]
+[INFO] spring-petclinic-api-gateway ....................... SUCCESS [ 23.807 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:28 min
+[INFO] Finished at: 2018-11-23T14:42:34+00:00
+[INFO] Final Memory: 127M/496M
+[INFO] ------------------------------------------------------------------------
+[workspace] $ /bin/sh -xe /tmp/jenkins6634921761343816261.sh
++ echo ae487773-386b-4508-8f1d-cac79497ed60
+ae487773-386b-4508-8f1d-cac79497ed60
++ docker-compose up -d
+Creating config-server ... 
+Creating tracing-server ... 
+[2A[2KCreating config-server  ... [31merror[0m[2B
+ERROR: for config-server  Cannot create container for service config-server: b'Conflict. The container name "/config-server" is already in use by container "29d8f414db1f438b3b69aa7e61882b2c687aceb16970de257e0c4bbaf4eced1e". You have to remove (or rename) that container to be able to reuse that name.'
+[1A[2KCreating tracing-server ... [31merror[0m[1B
+ERROR: for tracing-server  Cannot create container for service tracing-server: b'Conflict. The container name "/tracing-server" is already in use by container "adb5d44af42bba55fb73de25590c45e023abc4591848bf5ef21d9d59e5643527". You have to remove (or rename) that container to be able to reuse that name.'
+
+ERROR: for config-server  Cannot create container for service config-server: b'Conflict. The container name "/config-server" is already in use by container "29d8f414db1f438b3b69aa7e61882b2c687aceb16970de257e0c4bbaf4eced1e". You have to remove (or rename) that container to be able to reuse that name.'
+
+ERROR: for tracing-server  Cannot create container for service tracing-server: b'Conflict. The container name "/tracing-server" is already in use by container "adb5d44af42bba55fb73de25590c45e023abc4591848bf5ef21d9d59e5643527". You have to remove (or rename) that container to be able to reuse that name.'
+Encountered errors while bringing up the project.
+Build step 'Execute shell' marked build as failure
+Performing Post build task...
+Match found for : : True
+Logical operation result is TRUE
+Running script  : docker-compose down
+[workspace] $ /bin/sh -xe /tmp/jenkins8118625753233230029.sh
++ docker-compose down
+Network spring-petclinic-microservices_default is external, skipping
+POST BUILD TASK : SUCCESS
+END OF POST BUILD TASK : 0
+Finished: FAILURE

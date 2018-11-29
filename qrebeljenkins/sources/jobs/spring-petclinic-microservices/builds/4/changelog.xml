@@ -1,0 +1,20 @@
+commit 3c4da23ada0bef997558821352b11b25c1731daa
+tree ccedd144255a1c320a68b7d9bd3a8551804709f9
+parent 55d7c75df117da5f75dee0c1a88122997bc18750
+author Sten <sten@Stens-MacBook.local> 2018-11-23 16:29:07 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-23 16:29:07 +0200
+
+    Add QRebel agent
+
+
+
+:100644 100644 90e22d8578a78b05e414c29fa653cbfa5245c4c6 5d6f7422a951550559c65397e806d61c8e678b20 M	docker-compose.yml
+:100644 100644 00b01670fa3be2ff57da11ad2a87297a77c71548 337ec9947a9914df2a99a2c590a0125a4a2c1c5b M	docker/Dockerfile
+:100644 100644 73cf05cd21be3e570f86fd8608ec97d9e0e07671 db1d00192e158bc4da1e6f89e40d312a6d262203 M	spring-petclinic-admin-server/pom.xml
+:100644 100644 8fa5b0ab9c2f28c3dcfedd53cda6861762ea38d7 86e26150a17e70c330970f394e7bf3dc3a64f1e6 M	spring-petclinic-api-gateway/pom.xml
+:100644 100644 e97d8225ce60dff2abd8d233e3200a86ae05941b 50ce8d5930f5c973acd92a5f85fc1392d23edba4 M	spring-petclinic-config-server/pom.xml
+:100644 100644 67581f0de56e4f8bba7c2a51ea237141cb5c1491 367938864aaa8f31cd3b62e946cc0f4a95f9399f M	spring-petclinic-customers-service/pom.xml
+:100644 100644 a12ea0894f42dcb7d45e12291e947ac1b079b9e6 976d708d616ec0b41bb74b0bf584ca9c9acb09eb M	spring-petclinic-discovery-server/pom.xml
+:100644 100644 3208d6ba8aa7aa0c91df48047da3215ba812bc8b 1f4237ef119aa97eb79cea2c8f318a030ab47906 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:100644 100644 14630a6f347e989be44195fc8b288eb97acfd859 501356bbb406eebff7fb46901e5b209534dc7122 M	spring-petclinic-vets-service/pom.xml
+:100644 100644 22594b471ec0d40f5ab59414274566d69302ecf1 0a7d4cdded94bc250ffc5d512453c26521206a55 M	spring-petclinic-visits-service/pom.xml

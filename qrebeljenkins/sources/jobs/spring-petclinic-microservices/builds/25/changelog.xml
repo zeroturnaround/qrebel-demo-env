@@ -1,0 +1,17 @@
+commit 7ec97591faa7b3d5052c20d52150910c869615e5
+tree f3ded17982e1d06f77947e3ceeb7c1c6cd741cd5
+parent 702c70b1bec60e88c01f96b0e0dad9acf14d6731
+author Sten <sten@Stens-MacBook.local> 2018-11-27 14:58:07 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-11-27 14:58:07 +0200
+
+    Read build/env from environment var
+
+
+
+:100644 100644 86e26150a17e70c330970f394e7bf3dc3a64f1e6 eba1cd32d1df783e0fa3feab061f205334039aed M	spring-petclinic-api-gateway/pom.xml
+:100644 100644 e7de112c99e3cb7521c3b4a0e3aa49e1fa9c808d 021c7e18392e5156fa9e8ba1a9a7d6935dad44fd M	spring-petclinic-api-gateway/src/main/resources/application.yml
+:100644 100644 50ce8d5930f5c973acd92a5f85fc1392d23edba4 213cbd8844d3450d4603abdf3f7dd16db770beb8 M	spring-petclinic-config-server/pom.xml
+:100644 100644 976d708d616ec0b41bb74b0bf584ca9c9acb09eb 9a3a9c1362d352212b2866bcc998573fb1753c0c M	spring-petclinic-discovery-server/pom.xml
+:100644 100644 79b75825eca34a8807df22e6bb9d9bfbf74942d0 29bd28f127ec8ce693c0650f3d11cb288d50b583 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:100644 100644 501356bbb406eebff7fb46901e5b209534dc7122 318d382d909f475286982edb11efc7019c41d053 M	spring-petclinic-vets-service/pom.xml
+:100644 100644 0a7d4cdded94bc250ffc5d512453c26521206a55 999bd1bc1ce54c98283981f392f9ae379133e7d9 M	spring-petclinic-visits-service/pom.xml
