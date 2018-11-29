@@ -39,7 +39,9 @@
     </hudson.tasks.Maven>
     <hudson.tasks.Shell>
       <command>docker-compose up -d
-wait-for-it api-gateway:8080 -t 1000</command>
+wait-for-it api-gateway:8080 -t 1000
+wait-for-it customers-service:8081 -t 1000
+wait-for-it vets-service:8083 -t 1000</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Maven>
       <targets>clean verify -P jenkins -Dmaven.test.failure.ignore=true </targets>
