@@ -40,6 +40,7 @@ ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/config.xml /var/jenkins_home/jobs/spring-petclinic-microservices/config.xml
 COPY --chown=jenkins:jenkins sources/config.xml /var/jenkins_home/jobs/QRebel-demo/config.xml
 COPY --chown=jenkins:jenkins sources/config-plugin.xml /var/jenkins_home/jobs/QRebel-plugin/config.xml
+COPY --chown=jenkins:jenkins sources/jenkins-configuration.xml /var/jenkins_home/config.xml
 
 # Copy build history
 COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/lastStable /var/jenkins_home/jobs/spring-petclinic-microservices/lastStable
