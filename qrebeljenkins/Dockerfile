@@ -27,7 +27,7 @@ apt-get update && \
 apt-get -y install docker-ce
 
 RUN usermod -a -G docker jenkins
-
+RUN usermod -a -G root jenkins
 
 # Minimal Jenkins Plugins
 COPY --chown=jenkins:jenkins sources/qrebel-jenkins.hpi /var/jenkins_home/plugins/qrebel-jenkins.hpi
