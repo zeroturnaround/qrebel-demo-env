@@ -1,0 +1,12 @@
+commit 35d981927e759738986b328813742b6015f2a2c1
+tree 443ab1f9190c609fee1fb093b411d9a98d81ffc8
+parent daa7411479689e47d1dedd2aeee8df523f1df13e
+author Sten <sten@Stens-MacBook.local> 2018-12-04 13:20:30 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 13:20:30 +0200
+
+    Update tests
+
+
+
+:100644 100644 5640f4fcdd39faaad9a8db5d5e71df1c9760f5ab b3a482d5d2d6a1e311057c2a790edf5f3d351d1b M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:100644 100644 5d0335722ff9756cbd226c711547f16777c324cf 68733c63047cb92fce413523726dbbc564f5e8ac M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

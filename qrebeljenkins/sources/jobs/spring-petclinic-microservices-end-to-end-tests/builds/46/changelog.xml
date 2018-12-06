@@ -1,0 +1,11 @@
+commit 06a3de1939d2bf88c50f98803cf55c8a7dac8dcc
+tree f74915d5f28a03c38273ec074cb2e4e8736a2eb6
+parent 4739d8044f0e84fe067339f24fcbe04961be9edf
+author Sten <sten@Stens-MacBook.local> 2018-12-04 19:01:47 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 19:01:47 +0200
+
+    Add more vets
+
+
+
+:100644 100644 e6658a527e1df8336fc6ac455cec582d97e521e2 e73413398930d7def119e65475e3f40d8a8db2a7 M	spring-petclinic-vets-service/src/main/resources/db/hsqldb/data.sql

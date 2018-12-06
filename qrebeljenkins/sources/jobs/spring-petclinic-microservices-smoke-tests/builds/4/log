@@ -1,0 +1,16 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices-smoke-tests/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d333f82bb67d102a6cc0d2179033c604d93e6bf9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d333f82bb67d102a6cc0d2179033c604d93e6bf9
+Commit message: "Fix endpoint to load Vet Details"
+ > git rev-list --no-walk 083d86bacc5c919b939940f34f2cd2be4dae2484 # timeout=10
+Finished: SUCCESS

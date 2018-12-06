@@ -37,17 +37,10 @@ RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
 # Copy config
-COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/config.xml /var/jenkins_home/jobs/spring-petclinic-microservices/config.xml
-COPY --chown=jenkins:jenkins sources/config.xml /var/jenkins_home/jobs/QRebel-demo/config.xml
-COPY --chown=jenkins:jenkins sources/config-plugin.xml /var/jenkins_home/jobs/QRebel-plugin/config.xml
 COPY --chown=jenkins:jenkins sources/jenkins-configuration.xml /var/jenkins_home/config.xml
 
-# Copy build history
-COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/lastStable /var/jenkins_home/jobs/spring-petclinic-microservices/lastStable
-COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/nextBuildNumber /var/jenkins_home/jobs/spring-petclinic-microservices/nextBuildNumber
-COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/lastSuccessful /var/jenkins_home/jobs/spring-petclinic-microservices/lastSuccessful
-COPY --chown=jenkins:jenkins sources/jobs/spring-petclinic-microservices/builds /var/jenkins_home/jobs/spring-petclinic-microservices/builds/
-
+# Copy builds history
+COPY --chown=jenkins:jenkins sources/jobs/ /var/jenkins_home/jobs/
 
 RUN apt-get update && apt-get install -y maven
 RUN mkdir -p /home/jenkins

@@ -1,0 +1,11 @@
+commit d6cf1d12905a629734c32dceabbc8bc518751dbc
+tree 03883e3722ee143205ed1acf4117fbd01eeaa8fb
+parent 35d981927e759738986b328813742b6015f2a2c1
+author Sten <sten@Stens-MacBook.local> 2018-12-04 14:14:22 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 14:14:22 +0200
+
+    Add Edit Owners Test
+
+
+
+:100644 100644 b3a482d5d2d6a1e311057c2a790edf5f3d351d1b 3f2950b99813a63715877203f2f11af5cc9e14c0 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java

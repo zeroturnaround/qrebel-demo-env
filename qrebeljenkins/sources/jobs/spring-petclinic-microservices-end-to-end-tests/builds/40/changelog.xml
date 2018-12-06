@@ -1,0 +1,11 @@
+commit daa7411479689e47d1dedd2aeee8df523f1df13e
+tree 94085db9e91b5a53773162769dccc9d81769082d
+parent d333f82bb67d102a6cc0d2179033c604d93e6bf9
+author Sten <sten@Stens-MacBook.local> 2018-12-04 11:15:38 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 11:15:38 +0200
+
+    Add test for vets details screen
+
+
+
+:100644 100644 29bd28f127ec8ce693c0650f3d11cb288d50b583 5640f4fcdd39faaad9a8db5d5e71df1c9760f5ab M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java

@@ -1,0 +1,11 @@
+commit 4739d8044f0e84fe067339f24fcbe04961be9edf
+tree bc97e56090946c015d1e275153f1e2a55b03745a
+parent d6cf1d12905a629734c32dceabbc8bc518751dbc
+author Sten <sten@Stens-MacBook.local> 2018-12-04 14:24:23 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 14:24:23 +0200
+
+    Fix tests
+
+
+
+:100644 100644 3f2950b99813a63715877203f2f11af5cc9e14c0 5b4919f150168435c566d8903067fc29e947be82 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java

@@ -1,0 +1,34 @@
+commit d333f82bb67d102a6cc0d2179033c604d93e6bf9
+tree 8b988f691e6588eaf4ed77f12d9e5ce5b98d999c
+parent b534828df10acc87e89ba7c4f8d94771a75706e5
+author Sten <sten@Stens-MacBook.local> 2018-12-04 08:39:21 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 08:39:21 +0200
+
+    Fix endpoint to load Vet Details
+
+
+
+:100644 100644 318bc2edc0031d5a801939d8608bc1337b1e75fb 9891a270370e88e5fdd395c2711157625386933d M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.controller.js
+commit b534828df10acc87e89ba7c4f8d94771a75706e5
+tree e1a34cc2c97104952ccf57ffc5f305b96345b2e7
+parent 083d86bacc5c919b939940f34f2cd2be4dae2484
+author Sten <sten@Stens-MacBook.local> 2018-12-03 20:31:05 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-03 20:31:05 +0200
+
+    Started with Editing Vets
+
+
+
+:100644 100644 518684bc9d9626fb8db8d68ddf2a885d09e1b552 4287428276f439a8f540a999a93527079967d32c M	spring-petclinic-api-gateway/pom.xml
+:100644 100644 221feadb6911f2b0903178f15ba175d649e8ef79 5338fb6c3e94d83114bd65e38b1b0b299dfc521b M	spring-petclinic-api-gateway/src/main/resources/static/index.html
+:100644 100644 870aeb2097b022111f9ce63d7c2095142c089ec3 4f03b348940154ede0c32bf60008ee4841000cc4 M	spring-petclinic-api-gateway/src/main/resources/static/scripts/app.js
+:000000 100644 0000000000000000000000000000000000000000 29f04ea692120c9f46420a56f2f1f80db92262c9 A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.component.js
+:000000 100644 0000000000000000000000000000000000000000 318bc2edc0031d5a801939d8608bc1337b1e75fb A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.controller.js
+:000000 100644 0000000000000000000000000000000000000000 0601d62b9971275097e183901bf6a5698c238166 A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.js
+:000000 100644 0000000000000000000000000000000000000000 1423c53065935e810d4e95b9242746c9a0a79f7a A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.template.html
+:100644 100644 e705f050862bc64dc916e14fe0fbbf3be338f85f 0a3bc55c32f378c92013bedd7b7d92e2a2d8987c M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-list/vet-list.template.html
+:100644 100644 2e1796cde08814e367acda5630e806a9bf3ac3bc 6131e3a71ca4950b84e9e26ca75113122d0571aa M	spring-petclinic-customers-service/pom.xml
+:100644 100644 cfe268db357a31c32ff5465e0738cfcc0f821579 e49f0978034fcf192ee72a14804d785fd701a6e0 M	spring-petclinic-discovery-server/pom.xml
+:100644 100644 505f97386165271199abe196d71322a7fb215ea2 449e76fb13b8d8bc8346fbb36179ff526dc0d11d M	spring-petclinic-vets-service/pom.xml
+:100644 100644 d61d5dda175825da46fb5f087855a9d08368c0a2 5d0335722ff9756cbd226c711547f16777c324cf M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java
+:100644 100644 d8d7c2d68fc4cca0dd4d9929abb75fa302555b1f 87a90e4259fce29bfc64d7e8d793201e69e6c4d2 M	spring-petclinic-visits-service/pom.xml

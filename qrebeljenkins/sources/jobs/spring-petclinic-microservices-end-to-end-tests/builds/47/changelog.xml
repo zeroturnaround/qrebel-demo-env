@@ -1,0 +1,11 @@
+commit a3260e8e87f0b3c42dcf5f57f948d1794bd40097
+tree e0d0141f2c99c2e7f2a7e697378702d3aa6056da
+parent 06a3de1939d2bf88c50f98803cf55c8a7dac8dcc
+author Sten <sten@Stens-MacBook.local> 2018-12-04 19:30:28 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-04 19:30:28 +0200
+
+    Update number of vets in tests
+
+
+
+:100644 100644 5b4919f150168435c566d8903067fc29e947be82 a03e889b396123aca6bceef2123133d81984897f M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java

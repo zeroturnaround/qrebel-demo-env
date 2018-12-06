@@ -1,0 +1,21 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices-integration-tests/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/sten711/spring-petclinic-microservices
+ > git init /var/jenkins_home/jobs/spring-petclinic-microservices-integration-tests/workspace # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 083d86bacc5c919b939940f34f2cd2be4dae2484 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 083d86bacc5c919b939940f34f2cd2be4dae2484
+Commit message: "Fix 'QRebel version"
+First time build. Skipping changelog.
+Finished: SUCCESS
