@@ -1,0 +1,116 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices-deploy-production/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e65b3b69a79c114c9b2b9552c75b77ab4193ba18 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e65b3b69a79c114c9b2b9552c75b77ab4193ba18
+Commit message: "VET-37 #Add test for vet specialty not saved"
+ > git rev-list --no-walk a1fd7a3da612abf03af80a6a61370452f903f4f7 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins5841197681997526324.sh
++ ./mvnw clean install -PbuildDocker
+/var/jenkins_home/jobs/spring-petclinic-microservices-deploy-production/workspace
+[INFO] Scanning for projects...
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-parent/2.0.6.RELEASE/spring-boot-starter-parent-2.0.6.RELEASE.pom
+Progress (1): 0.6/12 kBProgress (1): 4.7/12 kBProgress (1): 8.8/12 kBProgress (1): 12 kB                       Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-parent/2.0.6.RELEASE/spring-boot-starter-parent-2.0.6.RELEASE.pom (12 kB at 9.7 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-dependencies/2.0.6.RELEASE/spring-boot-dependencies-2.0.6.RELEASE.pom
+Progress (1): 0.6/141 kBProgress (1): 2.0/141 kBProgress (1): 4.9/141 kBProgress (1): 7.8/141 kBProgress (1): 11/141 kB Progress (1): 12/141 kBProgress (1): 16/141 kBProgress (1): 18/141 kBProgress (1): 19/141 kBProgress (1): 21/141 kBProgress (1): 22/141 kBProgress (1): 24/141 kBProgress (1): 25/141 kBProgress (1): 27/141 kBProgress (1): 27/141 kBProgress (1): 28/141 kBProgress (1): 30/141 kBProgress (1): 31/141 kBProgress (1): 33/141 kBProgress (1): 36/141 kBProgress (1): 37/141 kBProgress (1): 39/141 kBProgress (1): 40/141 kBProgress (1): 42/141 kBProgress (1): 43/141 kBProgress (1): 44/141 kBProgress (1): 46/141 kBProgress (1): 47/141 kBProgress (1): 49/141 kBProgress (1): 51/141 kBProgress (1): 53/141 kBProgress (1): 54/141 kBProgress (1): 57/141 kBProgress (1): 59/141 kBProgress (1): 60/141 kBProgress (1): 61/141 kBProgress (1): 64/141 kBProgress (1): 68/141 kBProgress (1): 72/141 kBProgress (1): 76/141 kBProgress (1): 79/141 kBProgress (1): 81/141 kBProgress (1): 82/141 kBProgress (1): 85/141 kBProgress (1): 86/141 kBProgress (1): 88/141 kBProgress (1): 89/141 kBProgress (1): 91/141 kBProgress (1): 92/141 kBProgress (1): 94/141 kBProgress (1): 95/141 kBProgress (1): 98/141 kBProgress (1): 100/141 kBProgress (1): 101/141 kBProgress (1): 103/141 kBProgress (1): 105/141 kBProgress (1): 107/141 kBProgress (1): 108/141 kBProgress (1): 111/141 kBProgress (1): 113/141 kBProgress (1): 114/141 kBProgress (1): 115/141 kBProgress (1): 118/141 kBProgress (1): 120/141 kBProgress (1): 121/141 kBProgress (1): 123/141 kBProgress (1): 124/141 kBProgress (1): 127/141 kBProgress (1): 128/141 kBProgress (1): 130/141 kBProgress (1): 133/141 kBProgress (1): 137/141 kBProgress (1): 140/141 kBProgress (1): 141 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-dependencies/2.0.6.RELEASE/spring-boot-dependencies-2.0.6.RELEASE.pom (141 kB at 228 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies/Finchley.SR2/spring-cloud-dependencies-Finchley.SR2.pom
+Progress (1): 4.1/7.7 kBProgress (1): 5.0/7.7 kBProgress (1): 7.7 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies/Finchley.SR2/spring-cloud-dependencies-Finchley.SR2.pom (7.7 kB at 18 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies-parent/2.0.4.RELEASE/spring-cloud-dependencies-parent-2.0.4.RELEASE.pom
+Progress (1): 2.1/6.5 kBProgress (1): 3.3/6.5 kBProgress (1): 6.5 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies-parent/2.0.4.RELEASE/spring-cloud-dependencies-parent-2.0.4.RELEASE.pom (6.5 kB at 16 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-commons-dependencies/2.0.2.RELEASE/spring-cloud-commons-dependencies-2.0.2.RELEASE.pom
+Progress (1): 0.6/3.3 kBProgress (1): 3.3 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-commons-dependencies/2.0.2.RELEASE/spring-cloud-commons-dependencies-2.0.2.RELEASE.pom (3.3 kB at 12 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-dependencies/2.0.2.RELEASE/spring-cloud-netflix-dependencies-2.0.2.RELEASE.pom
+Progress (1): 0.6/15 kBProgress (1): 4.7/15 kBProgress (1): 7.3/15 kBProgress (1): 10/15 kB Progress (1): 11/15 kBProgress (1): 13/15 kBProgress (1): 14/15 kBProgress (1): 15 kB                      Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-dependencies/2.0.2.RELEASE/spring-cloud-netflix-dependencies-2.0.2.RELEASE.pom (15 kB at 48 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-config-dependencies/2.0.2.RELEASE/spring-cloud-config-dependencies-2.0.2.RELEASE.pom
+Progress (1): 2.1/3.7 kBProgress (1): 2.5/3.7 kBProgress (1): 3.7 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-config-dependencies/2.0.2.RELEASE/spring-cloud-config-dependencies-2.0.2.RELEASE.pom (3.7 kB at 13 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-gateway-dependencies/2.0.2.RELEASE/spring-cloud-gateway-dependencies-2.0.2.RELEASE.pom
+Progress (1): 0.6/3.0 kBProgress (1): 3.0 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-gateway-dependencies/2.0.2.RELEASE/spring-cloud-gateway-dependencies-2.0.2.RELEASE.pom (3.0 kB at 10 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.0.2.RELEASE/spring-cloud-sleuth-dependencies-2.0.2.RELEASE.pom
+Progress (1): 4.1/4.8 kBProgress (1): 4.8 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.0.2.RELEASE/spring-cloud-sleuth-dependencies-2.0.2.RELEASE.pom (4.8 kB at 16 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-vault-dependencies/2.0.2.RELEASE/spring-cloud-vault-dependencies-2.0.2.RELEASE.pom
+Progress (1): 0.6/3.7 kBProgress (1): 3.7 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-vault-dependencies/2.0.2.RELEASE/spring-cloud-vault-dependencies-2.0.2.RELEASE.pom (3.7 kB at 9.4 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-security-dependencies/2.0.1.RELEASE/spring-cloud-security-dependencies-2.0.1.RELEASE.pom
+Progress (1): 0.6/3.1 kBProgress (1): 3.1 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-security-dependencies/2.0.1.RELEASE/spring-cloud-security-dependencies-2.0.1.RELEASE.pom (3.1 kB at 11 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.0.1.RELEASE/spring-cloud-cloudfoundry-dependencies-2.0.1.RELEASE.pom
+Progress (1): 0.6/3.2 kBProgress (1): 3.2 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.0.1.RELEASE/spring-cloud-cloudfoundry-dependencies-2.0.1.RELEASE.pom (3.2 kB at 11 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-contract-dependencies/2.0.2.RELEASE/spring-cloud-contract-dependencies-2.0.2.RELEASE.pom
+Progress (1): 0.6/7.1 kBProgress (1): 3.2/7.1 kBProgress (1): 4.7/7.1 kBProgress (1): 6.2/7.1 kBProgress (1): 7.1 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-contract-dependencies/2.0.2.RELEASE/spring-cloud-contract-dependencies-2.0.2.RELEASE.pom (7.1 kB at 24 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-aws-dependencies/2.0.1.RELEASE/spring-cloud-aws-dependencies-2.0.1.RELEASE.pom
+Progress (1): 0.6/7.0 kBProgress (1): 4.7/7.0 kBProgress (1): 7.0 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-aws-dependencies/2.0.1.RELEASE/spring-cloud-aws-dependencies-2.0.1.RELEASE.pom (7.0 kB at 24 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/com/amazonaws/aws-java-sdk-bom/1.11.415/aws-java-sdk-bom-1.11.415.pom
+Downloading from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-bom/1.11.415/aws-java-sdk-bom-1.11.415.pom
+Progress (1): 2.2/31 kBProgress (1): 5.0/31 kBProgress (1): 7.8/31 kBProgress (1): 11/31 kB Progress (1): 13/31 kBProgress (1): 16/31 kBProgress (1): 19/31 kBProgress (1): 21/31 kBProgress (1): 24/31 kBProgress (1): 27/31 kBProgress (1): 30/31 kBProgress (1): 31 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-bom/1.11.415/aws-java-sdk-bom-1.11.415.pom (31 kB at 36 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/com/amazonaws/aws-java-sdk-pom/1.11.415/aws-java-sdk-pom-1.11.415.pom
+Downloading from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.11.415/aws-java-sdk-pom-1.11.415.pom
+Progress (1): 2.2/14 kBProgress (1): 5.0/14 kBProgress (1): 7.8/14 kBProgress (1): 11/14 kB Progress (1): 13/14 kBProgress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.11.415/aws-java-sdk-pom-1.11.415.pom (14 kB at 282 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.0.2.RELEASE/spring-cloud-openfeign-dependencies-2.0.2.RELEASE.pom
+Progress (1): 1.9/5.1 kBProgress (1): 3.4/5.1 kBProgress (1): 5.1 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.0.2.RELEASE/spring-cloud-openfeign-dependencies-2.0.2.RELEASE.pom (5.1 kB at 16 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/io/projectreactor/reactor-bom/Bismuth-SR12/reactor-bom-Bismuth-SR12.pom
+Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Bismuth-SR12/reactor-bom-Bismuth-SR12.pom
+Progress (1): 2.2/3.6 kBProgress (1): 3.6 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Bismuth-SR12/reactor-bom-Bismuth-SR12.pom (3.6 kB at 68 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/spring-framework-bom/5.0.10.RELEASE/spring-framework-bom-5.0.10.RELEASE.pom
+Progress (1): 2.0/5.3 kBProgress (1): 3.3/5.3 kBProgress (1): 5.3 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/spring-framework-bom/5.0.10.RELEASE/spring-framework-bom-5.0.10.RELEASE.pom (5.3 kB at 17 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/data/spring-data-releasetrain/Kay-SR11/spring-data-releasetrain-Kay-SR11.pom
+Progress (1): 2.0/4.5 kBProgress (1): 4.5 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/data/spring-data-releasetrain/Kay-SR11/spring-data-releasetrain-Kay-SR11.pom (4.5 kB at 15 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/data/build/spring-data-build/2.0.11.RELEASE/spring-data-build-2.0.11.RELEASE.pom
+Progress (1): 4.1/6.6 kBProgress (1): 6.1/6.6 kBProgress (1): 6.6 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/data/build/spring-data-build/2.0.11.RELEASE/spring-data-build-2.0.11.RELEASE.pom (6.6 kB at 22 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/integration/spring-integration-bom/5.0.9.RELEASE/spring-integration-bom-5.0.9.RELEASE.pom
+Progress (1): 2.0/8.9 kBProgress (1): 6.1/8.9 kBProgress (1): 8.9 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/integration/spring-integration-bom/5.0.9.RELEASE/spring-integration-bom-5.0.9.RELEASE.pom (8.9 kB at 30 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/security/spring-security-bom/5.0.9.RELEASE/spring-security-bom-5.0.9.RELEASE.pom
+Progress (1): 0.7/4.8 kBProgress (1): 4.8/4.8 kBProgress (1): 4.8 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/security/spring-security-bom/5.0.9.RELEASE/spring-security-bom-5.0.9.RELEASE.pom (4.8 kB at 16 kB/s)
+Downloading from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/session/spring-session-bom/Apple-SR6/spring-session-bom-Apple-SR6.pom
+Progress (1): 0.7/3.0 kBProgress (1): 2.0/3.0 kBProgress (1): 3.0 kB                        Downloaded from repository.spring.milestone: http://repo.spring.io/milestone/org/springframework/session/spring-session-bom/Apple-SR6/spring-session-bom-Apple-SR6.pom (3.0 kB at 8.3 kB/s)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-petclinic-microservices                                     [pom]
+[INFO] spring-petclinic-admin-server                                      [jar]
+[INFO] spring-petclinic-customers-service                                 [jar]
+[INFO] spring-petclinic-vets-service                                      [jar]
+[INFO] spring-petclinic-visits-service                                    [jar]
+[INFO] spring-petclinic-config-server                                     [jar]
+[INFO] spring-petclinic-discovery-server                                  [jar]
+[INFO] spring-petclinic-api-gateway                                       [jar]
+[INFO] 
+[INFO] -----< org.springframework.samples:spring-petclinic-microservices >-----
+[INFO] Building spring-petclinic-microservices 2.0.6                      [1/8]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-microservices ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-microservices ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-microservices-deploy-production/workspace/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/spring-petclinic-microservices/2.0.6/spring-petclinic-microservices-2.0.6.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spring-petclinic-microservices 2.0.6 ............... FAILURE [  0.984 s]
+[INFO] spring-petclinic-admin-server ...................... SKIPPED
+[INFO] spring-petclinic-customers-service ................. SKIPPED
+[INFO] spring-petclinic-vets-service ...................... SKIPPED
+[INFO] spring-petclinic-visits-service .................... SKIPPED
+[INFO] spring-petclinic-config-server ..................... SKIPPED
+[INFO] spring-petclinic-discovery-server .................. SKIPPED
+[INFO] spring-petclinic-api-gateway 2.0.6 ................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.906 s
+[INFO] Finished at: 2018-12-09T09:01:21Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-install) on project spring-petclinic-microservices: Failed to install metadata org.springframework.samples:spring-petclinic-microservices/maven-metadata.xml: Could not parse metadata /var/jenkins_home/.m2/repository/org/springframework/samples/spring-petclinic-microservices/maven-metadata-local.xml: in epilog non whitespace content is not allowed but got d (position: END_TAG seen ...</metadata>\nd... @13:2)  -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,11 @@
+commit a1fd7a3da612abf03af80a6a61370452f903f4f7
+tree 0b5797ac3429f60cc30006b918b912722ac7d1f2
+parent e7b2c6d41664508ae936c716d6ffd00579b64b1e
+author Sten <sten@Stens-MacBook.local> 2018-12-07 19:04:53 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-07 19:04:53 +0200
+
+    PET-37 #Fix specialty not saved
+
+
+
+:100644 100644 4c830b58409d6075b178ebd2304b8a6390bb9dc2 eabe3a6068d3d418d64c4519213ee362214530ee M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

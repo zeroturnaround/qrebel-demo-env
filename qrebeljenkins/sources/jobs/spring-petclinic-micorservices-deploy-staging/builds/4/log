@@ -1,0 +1,1406 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+Commit message: "PET-31 #Add Edit functionality to vets"
+ > git rev-list --no-walk d333f82bb67d102a6cc0d2179033c604d93e6bf9 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins2591026586638715613.sh
++ ./mvnw clean install -PbuildDocker
+/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-petclinic-microservices                                     [pom]
+[INFO] spring-petclinic-admin-server                                      [jar]
+[INFO] spring-petclinic-customers-service                                 [jar]
+[INFO] spring-petclinic-vets-service                                      [jar]
+[INFO] spring-petclinic-visits-service                                    [jar]
+[INFO] spring-petclinic-config-server                                     [jar]
+[INFO] spring-petclinic-discovery-server                                  [jar]
+[INFO] spring-petclinic-api-gateway                                       [jar]
+[INFO] 
+[INFO] -----< org.springframework.samples:spring-petclinic-microservices >-----
+[INFO] Building spring-petclinic-microservices 2.0.5                      [1/8]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-microservices ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-microservices ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/spring-petclinic-microservices/2.0.5/spring-petclinic-microservices-2.0.5.pom
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.admin:spring-petclinic-admin-server >--
+[INFO] Building spring-petclinic-admin-server 2.0.5                       [2/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-admin-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-admin-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:18:25+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/classes/git.properties] (for module spring-petclinic-admin-server)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-admin-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-admin-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-admin-server ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-admin-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-admin-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spring-petclinic-admin-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-admin-server ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-admin-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.0.5/spring-petclinic-admin-server-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-admin-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/docker/spring-petclinic-admin-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-admin-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-admin-server
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=>                                                 ]  68.12kB/3.006MB
+null: Downloading [==>                                                ]  137.8kB/3.006MB
+null: Downloading [=====>                                             ]  311.8kB/3.006MB
+null: Downloading [=========>                                         ]  555.5kB/3.006MB
+null: Downloading [=============>                                     ]  799.3kB/3.006MB
+null: Downloading [==============>                                    ]  868.9kB/3.006MB
+null: Downloading [=================>                                 ]  1.078MB/3.006MB
+null: Downloading [===================>                               ]  1.147MB/3.006MB
+null: Downloading [=========================>                         ]   1.53MB/3.006MB
+null: Downloading [================================>                  ]  1.983MB/3.006MB
+null: Downloading [===========================================>       ]  2.645MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 2b7f16308de7
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 5129e97ffd42
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 40bdc139095e
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 8d7b42ea726e
+Removing intermediate container 8d7b42ea726e
+ ---> 4284de0e1e9b
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in f76fe8529883
+Removing intermediate container f76fe8529883
+ ---> 7d386b3aea8f
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in ef0708e376ee
+Connecting to hub.qrebel.com (54.173.254.10:443)
+
+qrebel-agent.jar       3% |*                              |   323k  0:00:25 ETA
+
+qrebel-agent.jar      27% |********                       |  2355k  0:00:05 ETA
+
+qrebel-agent.jar    
+  58%
+ |******************             |
+  4963k
+  0:00:02 ETA
+
+
+qrebel-agent.jar      97% |****************************** |  8355k  0:00:00 ETA
+
+qrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+
+Removing intermediate container ef0708e376ee
+ ---> c13d8934d721
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built c13d8934d721
+Successfully tagged mszarlinski/spring-petclinic-admin-server:latest
+[INFO] Built mszarlinski/spring-petclinic-admin-server
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.client:spring-petclinic-customers-service >--
+[INFO] Building spring-petclinic-customers-service 2.0.5                  [3/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-customers-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-customers-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:19:00+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/classes/git.properties] (for module spring-petclinic-customers-service)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-customers-service ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-customers-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-customers-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-customers-service ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-customers-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-customers-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-customers-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-customers-service ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-customers-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.0.5/spring-petclinic-customers-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.0.5/spring-petclinic-customers-service-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-customers-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/docker/spring-petclinic-customers-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-customers-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-customers-service
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=>                                                 ]  68.12kB/3.006MB
+null: Downloading [=>                                                 ]  102.9kB/3.006MB
+null: Downloading [==>                                                ]  137.8kB/3.006MB
+null: Downloading [==>                                                ]  172.6kB/3.006MB
+null: Downloading [===>                                               ]  207.4kB/3.006MB
+null: Downloading [====>                                              ]    277kB/3.006MB
+null: Downloading [=====>                                             ]  311.8kB/3.006MB
+null: Downloading [======>                                            ]  381.5kB/3.006MB
+null: Downloading [=======>                                           ]  451.1kB/3.006MB
+null: Downloading [=========>                                         ]  555.5kB/3.006MB
+null: Downloading [==========>                                        ]  625.2kB/3.006MB
+null: Downloading [============>                                      ]  729.6kB/3.006MB
+null: Downloading [=============>                                     ]  834.1kB/3.006MB
+null: Downloading [================>                                  ]  973.3kB/3.006MB
+null: Downloading [=================>                                 ]  1.078MB/3.006MB
+null: Downloading [====================>                              ]  1.217MB/3.006MB
+null: Downloading [=======================>                           ]  1.391MB/3.006MB
+null: Downloading [=========================>                         ]   1.53MB/3.006MB
+null: Downloading [============================>                      ]  1.704MB/3.006MB
+null: Downloading [===============================>                   ]  1.879MB/3.006MB
+null: Downloading [==================================>                ]  2.087MB/3.006MB
+null: Downloading [======================================>            ]  2.296MB/3.006MB
+null: Downloading [==========================================>        ]   2.54MB/3.006MB
+null: Downloading [=============================================>     ]  2.749MB/3.006MB
+null: Downloading [================================================>  ]  2.923MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 62612c5cf618
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 093287232685
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 5e4fb5412ea4
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in fad31787d42f
+Removing intermediate container fad31787d42f
+ ---> e6c8aba5e4ef
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 7cfd38ecba0a
+Removing intermediate container 7cfd38ecba0a
+ ---> 6335c1839aca
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in eb8a6edc7b88
+Connecting to hub.qrebel.com (54.173.254.10:443)
+
+qrebel-agent.jar       3% |*                              |   327k  0:00:25 ETA
+
+qrebel-agent.jar      40% |************                   |  3463k  0:00:02 ETA
+
+qrebel-agent.jar      90% |****************************   |  7719k  0:00:00 ETA
+
+qrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+
+Removing intermediate container eb8a6edc7b88
+ ---> e1d1df75f72f
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built e1d1df75f72f
+Successfully tagged mszarlinski/spring-petclinic-customers-service:latest
+[INFO] Built mszarlinski/spring-petclinic-customers-service
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.vets:spring-petclinic-vets-service >--
+[INFO] Building spring-petclinic-vets-service 2.0.5                       [4/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-vets-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-vets-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:19:21+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/classes/git.properties] (for module spring-petclinic-vets-service)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-vets-service ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-vets-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-vets-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-vets-service ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-vets-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-vets-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-vets-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-vets-service ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-vets-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/vets/spring-petclinic-vets-service/2.0.5/spring-petclinic-vets-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/vets/spring-petclinic-vets-service/2.0.5/spring-petclinic-vets-service-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-vets-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/docker/spring-petclinic-vets-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-vets-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-vets-service
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=======>                                           ]  457.6kB/3.006MB
+null: Downloading [============>                                      ]  770.7kB/3.006MB
+null: Downloading [=============================>                     ]  1.749MB/3.006MB
+null: Downloading [=====================================>             ]  2.241MB/3.006MB
+null: Downloading [=============================================>     ]  2.753MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 989f3ae4879e
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> db804c47d296
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> b83002441881
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in b415e6e0dff3
+Removing intermediate container b415e6e0dff3
+ ---> 05f22efdaa98
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in e6ac3c5613a9
+Removing intermediate container e6ac3c5613a9
+ ---> 064f31a88dbd
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 322aa37a4714
+Connecting to hub.qrebel.com (54.173.254.10:443)
+
+qrebel-agent.jar       6% |*                              |   533k  0:00:15 ETA
+
+qrebel-agent.jar      36% |***********                    |  3077k  0:00:03 ETA
+
+qrebel-agent.jar      61% |*******************            |  5269k  0:00:01 ETA
+
+qrebel-agent.jar      86% |**************************     |  7413k  0:00:00 ETA
+
+qrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+
+Removing intermediate container 322aa37a4714
+ ---> 3d4ae08694cc
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 3d4ae08694cc
+Successfully tagged mszarlinski/spring-petclinic-vets-service:latest
+[INFO] Built mszarlinski/spring-petclinic-vets-service
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.visits:spring-petclinic-visits-service >--
+[INFO] Building spring-petclinic-visits-service 2.0.5                     [5/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-visits-service ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-visits-service ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:19:37+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/classes/git.properties] (for module spring-petclinic-visits-service)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-visits-service ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-visits-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-visits-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-visits-service ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-visits-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-visits-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-visits-service ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-visits-service ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-visits-service ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/visits/spring-petclinic-visits-service/2.0.5/spring-petclinic-visits-service-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/visits/spring-petclinic-visits-service/2.0.5/spring-petclinic-visits-service-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-visits-service ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/docker/spring-petclinic-visits-service-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-visits-service/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-visits-service
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=>                                                 ]  68.12kB/3.006MB
+null: Downloading [==>                                                ]  172.6kB/3.006MB
+null: Downloading [====>                                              ]    277kB/3.006MB
+null: Downloading [=====>                                             ]  311.8kB/3.006MB
+null: Downloading [========>                                          ]  485.9kB/3.006MB
+null: Downloading [==========>                                        ]  625.2kB/3.006MB
+null: Downloading [=============>                                     ]  834.1kB/3.006MB
+null: Downloading [================>                                  ]  1.008MB/3.006MB
+null: Downloading [====================>                              ]  1.217MB/3.006MB
+null: Downloading [=======================>                           ]  1.426MB/3.006MB
+null: Downloading [==========================>                        ]  1.565MB/3.006MB
+null: Downloading [==============================>                    ]  1.809MB/3.006MB
+null: Downloading [==================================>                ]  2.053MB/3.006MB
+null: Downloading [======================================>            ]  2.296MB/3.006MB
+null: Downloading [==========================================>        ]   2.54MB/3.006MB
+null: Downloading [==============================================>    ]  2.784MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 810b6917b84a
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> cb4da69dcd75
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 71588e5c16e5
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 7bdb47d609e8
+Removing intermediate container 7bdb47d609e8
+ ---> d1a3532b414e
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in d3cf7f297f7e
+Removing intermediate container d3cf7f297f7e
+ ---> cc6c2808e11b
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 1628495e5c8b
+Connecting to hub.qrebel.com (54.173.254.10:443)
+
+qrebel-agent.jar       0% |                               |    39k  0:03:37 ETA
+
+qrebel-agent.jar      19% |*****                          |  1650k  0:00:08 ETA
+
+qrebel-agent.jar      51% |****************               |  4434k  0:00:02 ETA
+
+qrebel-agent.jar      87% |***************************    |  7474k  0:00:00 ETA
+
+qrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+
+Removing intermediate container 1628495e5c8b
+ ---> 1c50ecfa680a
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 1c50ecfa680a
+Successfully tagged mszarlinski/spring-petclinic-visits-service:latest
+[INFO] Built mszarlinski/spring-petclinic-visits-service
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.config:spring-petclinic-config-server >--
+[INFO] Building spring-petclinic-config-server 2.0.5                      [6/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-config-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-config-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:19:56+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/classes/git.properties] (for module spring-petclinic-config-server)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-config-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-config-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-config-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-config-server ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-config-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-config-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-config-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-config-server ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-config-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.0.5/spring-petclinic-config-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.0.5/spring-petclinic-config-server-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-config-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/spring-petclinic-config-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/docker/spring-petclinic-config-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-config-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-config-server
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=>                                                 ]  68.12kB/3.006MB
+null: Downloading [==>                                                ]  137.8kB/3.006MB
+null: Downloading [====>                                              ]    277kB/3.006MB
+null: Downloading [=========>                                         ]  555.5kB/3.006MB
+null: Downloading [===========>                                       ]  694.8kB/3.006MB
+null: Downloading [===============>                                   ]  938.5kB/3.006MB
+null: Downloading [==================>                                ]  1.113MB/3.006MB
+null: Downloading [===========================>                       ]   1.67MB/3.006MB
+null: Downloading [==================================>                ]  2.053MB/3.006MB
+null: Downloading [========================================>          ]  2.436MB/3.006MB
+null: Downloading [=============================================>     ]  2.749MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 80dc241de4bc
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 5faa27c85c85
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> d5f36fa02653
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in fc3176a92e4f
+Removing intermediate container fc3176a92e4f
+ ---> 6e94f7032b33
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in 88c4ff2994b1
+Removing intermediate container 88c4ff2994b1
+ ---> ef1c92c8c22b
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 759eab12fd63
+Connecting to hub.qrebel.com (54.173.254.10:443)
+
+qrebel-agent.jar       2% |                               |   198k  0:00:42 ETA
+
+qrebel-agent.jar      30% |*********                      |  2566k  0:00:04 ETA
+
+qrebel-agent.jar      64% |********************           |  5510k  0:00:01 ETA
+
+qrebel-agent.jar     100%
+ |*******************************|
+  8539k
+  0:00:00 ETA
+
+
+
+
+Removing intermediate container 759eab12fd63
+ ---> 3f64128b7007
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 3f64128b7007
+Successfully tagged mszarlinski/spring-petclinic-config-server:latest
+[INFO] Built mszarlinski/spring-petclinic-config-server
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.discovery:spring-petclinic-discovery-server >--
+[INFO] Building spring-petclinic-discovery-server 2.0.5                   [7/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-discovery-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-discovery-server ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:20:09+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/classes/git.properties] (for module spring-petclinic-discovery-server)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-discovery-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-discovery-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-discovery-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-discovery-server ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-discovery-server ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-discovery-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-discovery-server ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-discovery-server ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-discovery-server ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.0.5/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.0.5/spring-petclinic-discovery-server-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-discovery-server ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/spring-petclinic-discovery-server-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/docker/spring-petclinic-discovery-server-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-discovery-server/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-discovery-server
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=>                                                 ]  68.12kB/3.006MB
+null: Downloading [==>                                                ]  172.6kB/3.006MB
+null: Downloading [====>                                              ]  242.2kB/3.006MB
+null: Downloading [======>                                            ]  416.3kB/3.006MB
+null: Downloading [===========>                                       ]  694.8kB/3.006MB
+null: Downloading [===============>                                   ]  938.5kB/3.006MB
+null: Downloading [====================>                              ]  1.217MB/3.006MB
+null: Downloading [============================>                      ]  1.739MB/3.006MB
+null: Downloading [================================>                  ]  1.983MB/3.006MB
+null: Downloading [=======================================>           ]  2.401MB/3.006MB
+null: Downloading [================================================>  ]  2.923MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> df588d9fe14d
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 1ba976136f35
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> 4f9a43cba20c
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 0baeb4bc18d5
+Removing intermediate container 0baeb4bc18d5
+ ---> 6f027ab6becb
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in eb82c4c0cd7e
+Removing intermediate container eb82c4c0cd7e
+ ---> f04cf8e66e0f
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in fdbc4fb6ddbd
+Connecting to hub.qrebel.com (54.81.134.46:443)
+
+qrebel-agent.jar       5% |*                              |   439k  0:00:18 ETA
+
+
+qrebel-agent.jar      35% |**********                     |  3015k  0:00:03 ETA
+
+qrebel-agent.jar      75% |***********************        |  6439k  0:00:00 ETA
+
+qrebel-agent.jar     100% |*******************************|  8539k  0:00:00 ETA
+
+
+Removing intermediate container fdbc4fb6ddbd
+ ---> 9092a84b1b0d
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built 9092a84b1b0d
+Successfully tagged mszarlinski/spring-petclinic-discovery-server:latest
+[INFO] Built mszarlinski/spring-petclinic-discovery-server
+[INFO] 
+[INFO] --< org.springframework.samples.petclinic.api:spring-petclinic-api-gateway >--
+[INFO] Building spring-petclinic-api-gateway 2.0.5                        [8/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-api-gateway ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-api-gateway ---
+[INFO] dotGitDirectory /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/.git
+[INFO] git.build.user.name 
+[INFO] git.build.user.email 
+[INFO] Using environment variable based branch name. GIT_BRANCH = origin/master
+[INFO] git.branch origin/master
+[INFO] --always = true
+[INFO] --dirty = -dirty
+[INFO] --abbrev = 7
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] git.commit.id.describe a0d4002
+[INFO] git.commit.id a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+[INFO] git.commit.id.abbrev a0d4002
+[INFO] git.dirty false
+[INFO] git.commit.user.name Sten
+[INFO] git.commit.user.email sten@Stens-MacBook.local
+[INFO] git.commit.message.full PET-31 #Add Edit functionality to vets
+[INFO] git.commit.message.short PET-31 #Add Edit functionality to vets
+[INFO] git.commit.time 2018-12-05T20:25:22+0000
+[INFO] git.remote.origin.url https://github.com/sten711/spring-petclinic-microservices
+[INFO] git.tags 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.name 
+[INFO] evalCommit is [a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff]
+[INFO] Tag refs [[Ref[refs/tags/v1.5.9=387f824fd9f4ce6e1693b43eec9fc35867fc9f3e], Ref[refs/tags/v2.0.3=8fa041c08ec96e3079c0df4006b537f8c0b3ad85]]]
+[INFO] Created map: [{}]
+[INFO] git.closest.tag.commit.count 
+[INFO] git.total.commit.count 628
+[INFO] git.build.time 2018-12-06T05:20:25+0000
+[INFO] git.build.version 2.0.5
+[INFO] git.build.host 7328c9c8bcb8
+[INFO] git.build.number 4
+[INFO] git.commit.id.describe-short a0d4002
+[INFO] found property git.build.user.email
+[INFO] found property git.build.host
+[INFO] found property git.dirty
+[INFO] found property git.remote.origin.url
+[INFO] found property git.closest.tag.name
+[INFO] found property git.total.commit.count
+[INFO] found property git.commit.id.describe-short
+[INFO] found property git.commit.user.email
+[INFO] found property git.commit.time
+[INFO] found property git.commit.message.full
+[INFO] found property git.build.version
+[INFO] found property git.commit.message.short
+[INFO] found property git.commit.id.abbrev
+[INFO] found property git.branch
+[INFO] found property git.build.user.name
+[INFO] found property git.build.number
+[INFO] found property git.closest.tag.commit.count
+[INFO] found property git.commit.id.describe
+[INFO] found property git.commit.id
+[INFO] found property git.tags
+[INFO] found property git.build.time
+[INFO] found property git.commit.user.name
+[INFO] Writing properties file to [/var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/classes/git.properties] (for module spring-petclinic-api-gateway)...
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:build-info (default) @ spring-petclinic-api-gateway ---
+[INFO] 
+[INFO] --- wro4j-maven-plugin:1.8.0:run (default) @ spring-petclinic-api-gateway ---
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/me/n4u/sass/sass-gems/maven-metadata.xml
+[INFO] /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/src/main/less
+[INFO] Executing the mojo: 
+[INFO] Wro4j Model path: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/src/main/wro/wro.xml
+[INFO] targetGroups: null
+[INFO] minimize: true
+[INFO] ignoreMissingResources: null
+[INFO] parallelProcessing: false
+[INFO] buildDirectory: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target
+[INFO] destinationFolder: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target
+[INFO] cssDestinationFolder: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/classes/static/css
+[INFO] The following groups will be processed: [petclinic]
+[INFO] folder: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/classes/static/css
+[INFO] processing group: petclinic.css
+[WARNING] Less warnings are:
+[WARNING] 10:1 Cannot link source map. Css result location is not know and could not be deduced from input less source..
+[INFO] file size: petclinic.css -> 152551 bytes
+[INFO] /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/classes/static/css/petclinic.css (152551 bytes)
+[INFO] folder: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target
+[INFO] processing group: petclinic.js
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ spring-petclinic-api-gateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 56 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spring-petclinic-api-gateway ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ spring-petclinic-api-gateway ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spring-petclinic-api-gateway ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ spring-petclinic-api-gateway ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ spring-petclinic-api-gateway ---
+[INFO] Building jar: /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ spring-petclinic-api-gateway ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-petclinic-api-gateway ---
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.0.5/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] Installing /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.0.5/spring-petclinic-api-gateway-2.0.5.pom
+[INFO] 
+[INFO] --- docker-maven-plugin:1.1.1:build (default) @ spring-petclinic-api-gateway ---
+[INFO] Using authentication suppliers: [ConfigFileRegistryAuthSupplier]
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.0.5.jar -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/docker/spring-petclinic-api-gateway-2.0.5.jar
+[INFO] Copying /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/../docker/Dockerfile -> /var/jenkins_home/jobs/spring-petclinic-micorservices-deploy-staging/workspace/spring-petclinic-api-gateway/target/docker/Dockerfile
+[INFO] Building image mszarlinski/spring-petclinic-api-gateway
+Step 1/13 : FROM openjdk:8-jre-alpine
+
+ ---> 2e01f547f003
+Step 2/13 : VOLUME /tmp
+
+ ---> Using cache
+ ---> 6904023c293c
+Step 3/13 : ARG DOCKERIZE_VERSION
+
+ ---> Using cache
+ ---> 608e773d8816
+Step 4/13 : ARG ARTIFACT_NAME
+
+ ---> Using cache
+ ---> d19f1c993276
+Step 5/13 : ARG EXPOSED_PORT
+
+ ---> Using cache
+ ---> c6ba086171e4
+Step 6/13 : ENV SPRING_PROFILES_ACTIVE docker
+
+ ---> Using cache
+ ---> 22776da4e776
+Step 7/13 : ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
+
+null: Downloading [>                                                  ]  33.31kB/3.006MB
+null: Downloading [=>                                                 ]  68.12kB/3.006MB
+null: Downloading [==>                                                ]  137.8kB/3.006MB
+null: Downloading [=====>                                             ]  311.8kB/3.006MB
+null: Downloading [======>                                            ]  416.3kB/3.006MB
+null: Downloading [==========>                                        ]    660kB/3.006MB
+null: Downloading [===============>                                   ]  938.5kB/3.006MB
+null: Downloading [=======================>                           ]  1.391MB/3.006MB
+null: Downloading [=================================================> ]  2.986MB/3.006MB
+null: Downloading [==================================================>]  3.006MB/3.006MB
+
+ ---> Using cache
+ ---> eb188b06f9ee
+Step 8/13 : RUN tar xzf dockerize.tar.gz
+
+ ---> Using cache
+ ---> 423dd9248303
+Step 9/13 : RUN chmod +x dockerize
+
+ ---> Using cache
+ ---> 0f607ca1c7ba
+Step 10/13 : ADD ${ARTIFACT_NAME}.jar /app.jar
+
+ ---> e4f10608a69d
+Step 11/13 : RUN touch /app.jar
+
+ ---> Running in 811233d7f336
+Removing intermediate container 811233d7f336
+ ---> 07828d01b720
+Step 12/13 : EXPOSE ${EXPOSED_PORT}
+
+ ---> Running in c1336b17b43c
+Removing intermediate container c1336b17b43c
+ ---> c562274f1774
+Step 13/13 : RUN wget -O /qrebel-agent.jar https://hub.qrebel.com/getagent/qrebel-agent.jar
+
+ ---> Running in 44fa5e0165c7
+Connecting to hub.qrebel.com (54.81.134.46:443)
+
+qrebel-agent.jar       2% |                               |   186k  0:00:44 ETA
+
+qrebel-agent.jar      14% |****                           |  1242k  0:00:11 ETA
+
+qrebel-agent.jar      33% |**********                     |  2858k  0:00:05 ETA
+
+qrebel-agent.jar      59% |******************             |  5066k  0:00:02 ETA
+
+qrebel-agent.jar      83% |*************************      |  7130k  0:00:00 ETA
+
+qrebel-agent.jar     100% |*******************************|  8539k
+  0:00:00 ETA
+
+
+Removing intermediate container 44fa5e0165c7
+ ---> b5ad1420fc93
+ProgressMessage{id=null, status=null, stream=null, error=null, progress=null, progressDetail=null}
+Successfully built b5ad1420fc93
+Successfully tagged mszarlinski/spring-petclinic-api-gateway:latest
+[INFO] Built mszarlinski/spring-petclinic-api-gateway
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spring-petclinic-microservices 2.0.5 ............... SUCCESS [  0.943 s]
+[INFO] spring-petclinic-admin-server ...................... SUCCESS [ 42.044 s]
+[INFO] spring-petclinic-customers-service ................. SUCCESS [ 22.056 s]
+[INFO] spring-petclinic-vets-service ...................... SUCCESS [ 16.196 s]
+[INFO] spring-petclinic-visits-service .................... SUCCESS [ 17.891 s]
+[INFO] spring-petclinic-config-server ..................... SUCCESS [ 13.808 s]
+[INFO] spring-petclinic-discovery-server .................. SUCCESS [ 15.362 s]
+[INFO] spring-petclinic-api-gateway 2.0.5 ................. SUCCESS [ 31.271 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:40 min
+[INFO] Finished at: 2018-12-06T05:20:56Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

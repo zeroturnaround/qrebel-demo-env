@@ -1,0 +1,31 @@
+commit e65b3b69a79c114c9b2b9552c75b77ab4193ba18
+tree 53783563902d5d3a76e568b4a7d16eb03e6942c3
+parent b1ce99a585cc0bccf61e092d8a5f78e94ad71459
+author Sten <sten@Stens-MacBook.local> 2018-12-09 11:00:10 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-09 11:00:10 +0200
+
+    VET-37 #Add test for vet specialty not saved
+
+
+
+:100644 100644 85b86e9be614a027f3b2232cc345fdae0820209b a47fbb19f9f7fe417aa4857da92a1dcdbecc2163 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:100644 100644 ff75d53458c0b1d5e3598077ea5f7453c6a0630b eec7fcdbfa2197e5f13f23e9b0bd9a8102e9bd63 M	spring-petclinic-vets-service/src/main/resources/db/hsqldb/data.sql
+commit b1ce99a585cc0bccf61e092d8a5f78e94ad71459
+tree e5d7731ac6653502042ed52cfaa715f340318312
+parent a1fd7a3da612abf03af80a6a61370452f903f4f7
+author Sten <sten@Stens-MacBook.local> 2018-12-09 10:55:18 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-09 10:55:18 +0200
+
+    PET-39 #Update to Springboot 2.0.6
+
+
+
+:100644 100644 94c1ed7552ce551a252b13a81fe8a164c69c8eeb 3efe5446a022b8245bfb7fb2548aa5eb79b68758 M	pom.xml
+:100644 100644 db1d00192e158bc4da1e6f89e40d312a6d262203 ccddfdc7dfd4f02863fd8f518ab185f956de5149 M	spring-petclinic-admin-server/pom.xml
+:100644 100644 4287428276f439a8f540a999a93527079967d32c a52a4796023935b33b956596ce2c33ddff180eaa M	spring-petclinic-api-gateway/pom.xml
+:100644 100644 bf4f57691b2528165dfbc446b50cbcbf97efdd58 6748d7d18719b3bd3becb42a3b617ac4b3e1b6ee M	spring-petclinic-config-server/pom.xml
+:100644 100644 6131e3a71ca4950b84e9e26ca75113122d0571aa 86c4a4a0ffd085ca185341c4b05278cfdee3b165 M	spring-petclinic-customers-service/pom.xml
+:100644 100644 e49f0978034fcf192ee72a14804d785fd701a6e0 8325f4f07218200814f32302ae8453f92b384350 M	spring-petclinic-discovery-server/pom.xml
+:100644 100644 ef1cbcd89d57cefb9838ad7c86463abee3d0c420 6609491aa88adb23595c4486ccf09a4fcda6069f M	spring-petclinic-e2e-tests/pom.xml
+:100644 100644 449e76fb13b8d8bc8346fbb36179ff526dc0d11d 8c69093b8a5be6bf4cc85828f81c2ee82886cea9 M	spring-petclinic-vets-service/pom.xml
+:100644 100644 87a90e4259fce29bfc64d7e8d793201e69e6c4d2 1fa148d7cda5fed0496b0f731f10ebf1877bf147 M	spring-petclinic-visits-service/pom.xml

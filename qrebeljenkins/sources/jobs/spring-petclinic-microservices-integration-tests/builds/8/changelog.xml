@@ -1,0 +1,11 @@
+commit a22d9fb8e87f2d51e64886cf433f6374c70a180a
+tree ce9d8288a72ffeaa7ff14ec4fd389212c483e5fd
+parent 70bdf7a2046c106ca682bac447dc106fe683c02f
+author Sten <sten@Stens-MacBook.local> 2018-12-06 15:14:21 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-06 15:14:21 +0200
+
+    PET-34 #fix vets test
+
+
+
+:100644 100644 83e6a6fb616f6ffada885cbbe38a62bbb736f6d6 69b7efb82d9277d053129a078db6f7ef4e110b8c M	spring-petclinic-vets-service/src/test/java/org/springframework/samples/petclinic/vets/web/VetResourceTest.java

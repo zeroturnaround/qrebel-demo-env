@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -24,14 +24,18 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H H(0-7) * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <org.jenkinsci.plugins.envpropagator.EnvPropagatorBuilder plugin="build-env-propagator@1.0">
-      <envVariableString>QREBEL_AUTH_TOKEN=_SPECIFY_TOKEN_HERE:APP_VERSION=2.0.6:APP_BUILD=2.0.6RC5</envVariableString>
+      <envVariableString>QREBEL_AUTH_TOKEN=_SPECIFY_TOKEN_HERE:APP_VERSION=2.0.7:APP_BUILD=2.0.7RC27</envVariableString>
     </org.jenkinsci.plugins.envpropagator.EnvPropagatorBuilder>
     <hudson.tasks.Maven>
-      <targets>clean install -PbuildDocker</targets>
+      <targets>clean install -PbuildDocker </targets>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
@@ -45,15 +49,7 @@ wait-for-it vets-service:8083 -t 1000
 wait-for-it visits-service:8082 -t 1000</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Maven>
-      <targets>clean verify -P jenkins -Dmaven.test.failure.ignore=true </targets>
-      <pom>spring-petclinic-e2e-tests/pom.xml</pom>
-      <usePrivateRepository>false</usePrivateRepository>
-      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
-      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
-      <injectBuildVariables>false</injectBuildVariables>
-    </hudson.tasks.Maven>
-    <hudson.tasks.Maven>
-      <targets>verify -P jenkins</targets>
+      <targets>clean verify -P jenkins </targets>
       <pom>spring-petclinic-e2e-tests/pom.xml</pom>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
@@ -62,18 +58,18 @@ wait-for-it visits-service:8082 -t 1000</command>
     </hudson.tasks.Maven>
     <io.jenkins.plugins.qrebel.QRebelBuilder plugin="qrebel-jenkins@1.0-SNAPSHOT">
       <appName>spring-petclinic-api-gateway</appName>
-      <targetBuild>2.0.6RC5</targetBuild>
-      <baselineBuild>2.0.5RC1</baselineBuild>
+      <targetBuild>2.0.7RC27</targetBuild>
+      <baselineBuild>2.0.7RC26</baselineBuild>
       <apiKey></apiKey>
       <durationFail>0</durationFail>
       <ioFail>0</ioFail>
       <exceptionFail>0</exceptionFail>
-      <threshold>0</threshold>
+      <threshold>200</threshold>
     </io.jenkins.plugins.qrebel.QRebelBuilder>
     <io.jenkins.plugins.qrebel.QRebelBuilder plugin="qrebel-jenkins@1.0-SNAPSHOT">
       <appName>spring-petclinic-config-server</appName>
-      <targetBuild>2.0.6RC5</targetBuild>
-      <baselineBuild>2.0.5RC1</baselineBuild>
+      <targetBuild>2.0.7RC27</targetBuild>
+      <baselineBuild>2.0.7RC26</baselineBuild>
       <apiKey></apiKey>
       <durationFail>0</durationFail>
       <ioFail>0</ioFail>
@@ -82,38 +78,38 @@ wait-for-it visits-service:8082 -t 1000</command>
     </io.jenkins.plugins.qrebel.QRebelBuilder>
     <io.jenkins.plugins.qrebel.QRebelBuilder plugin="qrebel-jenkins@1.0-SNAPSHOT">
       <appName>spring-petclinic-customers-service</appName>
-      <targetBuild>2.0.6RC5</targetBuild>
-      <baselineBuild>2.0.5RC1</baselineBuild>
+      <targetBuild>2.0.7RC27</targetBuild>
+      <baselineBuild>2.0.7RC26</baselineBuild>
       <apiKey></apiKey>
       <durationFail>0</durationFail>
       <ioFail>0</ioFail>
       <exceptionFail>0</exceptionFail>
-      <threshold>0</threshold>
+      <threshold>100</threshold>
     </io.jenkins.plugins.qrebel.QRebelBuilder>
     <io.jenkins.plugins.qrebel.QRebelBuilder plugin="qrebel-jenkins@1.0-SNAPSHOT">
       <appName>spring-petclinic-visits-service</appName>
-      <targetBuild>2.0.6RC5</targetBuild>
-      <baselineBuild>2.0.5RC1</baselineBuild>
+      <targetBuild>2.0.7RC27</targetBuild>
+      <baselineBuild>2.0.7RC26</baselineBuild>
       <apiKey></apiKey>
       <durationFail>0</durationFail>
       <ioFail>0</ioFail>
       <exceptionFail>0</exceptionFail>
-      <threshold>0</threshold>
+      <threshold>100</threshold>
     </io.jenkins.plugins.qrebel.QRebelBuilder>
     <io.jenkins.plugins.qrebel.QRebelBuilder plugin="qrebel-jenkins@1.0-SNAPSHOT">
       <appName>spring-petclinic-vets-service</appName>
-      <targetBuild>2.0.6RC5</targetBuild>
-      <baselineBuild>2.0.5RC1</baselineBuild>
+      <targetBuild>2.0.7RC27</targetBuild>
+      <baselineBuild>2.0.7RC26</baselineBuild>
       <apiKey></apiKey>
       <durationFail>0</durationFail>
       <ioFail>0</ioFail>
       <exceptionFail>0</exceptionFail>
-      <threshold>50</threshold>
+      <threshold>100</threshold>
     </io.jenkins.plugins.qrebel.QRebelBuilder>
     <io.jenkins.plugins.qrebel.QRebelBuilder plugin="qrebel-jenkins@1.0-SNAPSHOT">
       <appName>spring-petclinic-discovery-server</appName>
-      <targetBuild>2.0.6RC5</targetBuild>
-      <baselineBuild>2.0.5RC1</baselineBuild>
+      <targetBuild>2.0.7RC27</targetBuild>
+      <baselineBuild>2.0.7RC26</baselineBuild>
       <apiKey></apiKey>
       <durationFail>0</durationFail>
       <ioFail>0</ioFail>

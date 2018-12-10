@@ -1,0 +1,46 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/spring-petclinic-microservices-integration-tests/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sten711/spring-petclinic-microservices # timeout=10
+Fetching upstream changes from https://github.com/sten711/spring-petclinic-microservices
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sten711/spring-petclinic-microservices +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 286fd3de2c8824b9bdc70d01d60962dbe8fe01b4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 286fd3de2c8824b9bdc70d01d60962dbe8fe01b4
+Commit message: "PET-35 fix GET /vets endpoint"
+ > git rev-list --no-walk a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff # timeout=10
+[workspace] $ mvn clean verify
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spring-petclinic-microservices
+[INFO] spring-petclinic-admin-server
+[INFO] spring-petclinic-customers-service
+[INFO] spring-petclinic-vets-service
+[INFO] spring-petclinic-visits-service
+[INFO] spring-petclinic-config-server
+[INFO] spring-petclinic-discovery-server
+[INFO] spring-petclinic-api-gateway
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-microservices 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4LY9qAbl0+xaq4stsC31wXaa51IICuI8DGD7yd5+vXM8AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-microservices ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-petclinic-admin-server 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4LY9qAbl0+xaq4stsC31wXaa51IICuI8DGD7yd5+vXM8AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spring-petclinic-admin-server ---
+[INFO] Deleting /var/jenkins_home/jobs/spring-petclinic-microservices-integration-tests/workspace/spring-petclinic-admin-server/target
+[INFO] 
+[8mha:////4LY9qAbl0+xaq4stsC31wXaa51IICuI8DGD7yd5+vXM8AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ spring-petclinic-admin-server ---
+Build was aborted
+Aborted by [8mha:////4HLKf3FT3tpabdWQ088inamoWe+BVwMcqsS/kNuXDB6iAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL90rzsvPzyPAATbMabwgAAAA==[0munknown
+Finished: ABORTED

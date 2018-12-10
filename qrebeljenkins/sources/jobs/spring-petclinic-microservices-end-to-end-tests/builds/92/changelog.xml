@@ -1,0 +1,17 @@
+commit 67a50730ad221afa540642b0b306b6132bb479a6
+tree e85c8cc99b57045e5d33c2d314530bb065099f47
+parent e65b3b69a79c114c9b2b9552c75b77ab4193ba18
+author Sten <sten@Stens-MacBook.local> 2018-12-09 14:07:49 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-09 14:07:49 +0200
+
+    PET-32 Add customers picker to vets
+
+
+
+:100644 100644 943f0f19eed3b607663e8c768d15e39c195af136 e49c793cb6ceac7270eafa7262f3e5a46f010f0e M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.template.html
+:100644 100644 2d7e3e8e7472776834ed581e3f1e74caa669b934 608c4e816a9754f8ed67bf7bb7540a3b39639d0e M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.controller.js
+:100644 100644 a8241e9b2564de054a59a9ca6d398d67a72159e0 c2b67baffe95773e6c078804f6d1c1fe9f5b4140 M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.template.html
+:100644 100644 2f5cb36636895f7b740712233fff69fcea47d58f ff4694ca8270540f7c7911aca6ffedca3f82c85c M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/VetsServiceApplication.java
+:000000 100644 0000000000000000000000000000000000000000 4632c5acbb3a09625c0ca821ddeb2242a22a19fb A	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/OwnerDetails.java
+:100644 100644 aa9e3b1b25068f6675fee313d846193e3468b2b9 58661bd605da2de81d05159832e0c82e969c1b0d M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
+:100644 100644 eabe3a6068d3d418d64c4519213ee362214530ee 0fa3a3d249aa541145367580889b815add973330 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

@@ -1,0 +1,22 @@
+commit a22d9fb8e87f2d51e64886cf433f6374c70a180a
+tree ce9d8288a72ffeaa7ff14ec4fd389212c483e5fd
+parent 70bdf7a2046c106ca682bac447dc106fe683c02f
+author Sten <sten@Stens-MacBook.local> 2018-12-06 15:14:21 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-06 15:14:21 +0200
+
+    PET-34 #fix vets test
+
+
+
+:100644 100644 83e6a6fb616f6ffada885cbbe38a62bbb736f6d6 69b7efb82d9277d053129a078db6f7ef4e110b8c M	spring-petclinic-vets-service/src/test/java/org/springframework/samples/petclinic/vets/web/VetResourceTest.java
+commit d199bc823c48e1d8464f2dfaeed7ed03602bd8fc
+tree 6b4eee5156b635944c4abf77e11fdd1202076c7a
+parent a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff
+author Sten <sten@Stens-MacBook.local> 2018-12-06 10:29:40 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-06 14:41:50 +0200
+
+    PET-36 #fix GET /vets endpoint
+
+
+
+:100644 100644 f1284bd4e7effc4e2faba58d23213f00a11be72d aa9e3b1b25068f6675fee313d846193e3468b2b9 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
