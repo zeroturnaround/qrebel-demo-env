@@ -1,0 +1,36 @@
+commit 4225f361e74700c074abd56c24b8c3f3369f54c6
+tree 94d9f2eeb54318d6c7ea0810fc47dedf351a15d1
+parent ff30a77d636b24f5b649e9ce387bc73323023780
+author mirkoadari <mirko.adari@live.com> 2018-12-12 13:33:46 +0200
+committer GitHub <noreply@github.com> 2018-12-12 13:33:46 +0200
+
+    Added management endpoint. PET-32
+
+
+
+:100644 100644 cef66b4a3523650e48ba69182c76a1815d4d6dd8 d4600964f93b68df8c964217a4662793ed2e33b0 M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit ff30a77d636b24f5b649e9ce387bc73323023780
+tree e74e8cf12fe328bafcad228e5792ab333ab15ec1
+parent a96aea9647e5c03584563d4e63471750cbcf4035
+author Mirko Adari <mirko.adari@live.com> 2018-12-12 09:08:51 +0200
+committer Mirko Adari <mirko.adari@live.com> 2018-12-12 09:08:51 +0200
+
+    Disabled datasource health check.
+
+
+
+:100644 100644 e6bce2ebe77a2d478844eae0bfd9287b75fbbf51 5be1faada14925b8fda231797506417512d61ca9 M	spring-petclinic-customers-service/src/main/resources/application.properties
+:100644 100644 3b4cc1d3f739d296de80728eb26d5b9529b3ab82 b44156bcd2a1619b1e2fe80a97c3d7bf4f0cc358 M	spring-petclinic-vets-service/src/main/resources/application.properties
+:100644 100644 cbe617ef036b199654011c74a3b41bf3602440c9 711924f49e629d41f04fa57ff673e1612bc539c8 M	spring-petclinic-visits-service/src/main/resources/application.properties
+commit a96aea9647e5c03584563d4e63471750cbcf4035
+tree 3cc69e542d4b42bb8d7faa53b2650b42a09f3e18
+parent bc610d0b1e11eaac640f7d35819bce083a782191
+author Sten <sten@Stens-MacBook.local> 2018-12-12 08:54:51 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-12 08:54:51 +0200
+
+    Add VetsClient for Eureka discoverability
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 40e6824fa5ac657e50d32d6e9412f1535d7598bd A	spring-petclinic-api-gateway/src/main/java/org/springframework/samples/petclinic/api/application/VetsServiceClient.java
+:100644 100644 9d9828c8ca80eed8598a4c66551f5e2def17da5c e6ffa1eb925b75b236395f49bf41f8bf1eda9beb M	spring-petclinic-api-gateway/src/main/java/org/springframework/samples/petclinic/api/boundary/web/ApiGatewayController.java

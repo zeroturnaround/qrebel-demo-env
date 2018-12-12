@@ -1,0 +1,14 @@
+commit 272414f6b9dff21fd44d771019fa8eef617255a0
+tree c6934954ace099d91e8225ba19d11d5a5842d971
+parent 15f5f28df901a218261c865c2cbe59d49212c4f3
+author Sten <sten@Stens-MacBook.local> 2018-12-12 10:14:39 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-12 10:14:39 +0200
+
+    PET-45 #Fix execessive IO
+
+
+
+:100644 100644 e6bce2ebe77a2d478844eae0bfd9287b75fbbf51 5be1faada14925b8fda231797506417512d61ca9 M	spring-petclinic-customers-service/src/main/resources/application.properties
+:100644 100644 77c31b185e5c41c6666fe7357d6506fa77ef7edf f2ecdf1e5b967149b8641a308bf055a92f9acd41 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java
+:100644 100644 3b4cc1d3f739d296de80728eb26d5b9529b3ab82 b44156bcd2a1619b1e2fe80a97c3d7bf4f0cc358 M	spring-petclinic-vets-service/src/main/resources/application.properties
+:100644 100644 cbe617ef036b199654011c74a3b41bf3602440c9 711924f49e629d41f04fa57ff673e1612bc539c8 M	spring-petclinic-visits-service/src/main/resources/application.properties

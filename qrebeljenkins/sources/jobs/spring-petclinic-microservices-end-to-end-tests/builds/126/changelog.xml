@@ -1,0 +1,11 @@
+commit 901b447f2b8a697bd917690d948c46debf544104
+tree ec6225f5c670e1f5017bbea6f06f45bd69092a40
+parent decec88645b85543f41da882bcd614a4f0f34775
+author Sten <sten@Stens-MacBook.local> 2018-12-11 22:28:21 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 22:28:21 +0200
+
+    PET-36 #fix vet fetchtype
+
+
+
+:100644 100644 ced89ba7bdc293f4cd6a88930305b134426abdab cddb6a9e3bdf6169756b3c2387e01bb2be0b6cda M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java

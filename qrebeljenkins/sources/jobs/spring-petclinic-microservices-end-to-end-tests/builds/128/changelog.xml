@@ -1,0 +1,12 @@
+commit 15f5f28df901a218261c865c2cbe59d49212c4f3
+tree 6700ac920aa90e5e333002a3c3d1e53394643c91
+parent 3ebdf4e53626aff1fdd9a0a176ab76785b7d2db0
+author Sten <sten@Stens-MacBook.local> 2018-12-12 08:27:00 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-12 08:27:00 +0200
+
+    PET-37 #new speciality not saved
+
+
+
+:100644 100644 03c02d05deacef28d958c45f449ed8bb958e5d5f d9615327aae4e48d90ca9e3d0d1fbfa815cc744a M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:100644 100644 583caec7d20bc457f5c2849eb31840d135a8ff4d 77c31b185e5c41c6666fe7357d6506fa77ef7edf M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

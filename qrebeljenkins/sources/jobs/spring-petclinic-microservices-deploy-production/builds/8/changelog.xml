@@ -1,0 +1,167 @@
+commit bc610d0b1e11eaac640f7d35819bce083a782191
+tree 97afc6d1a2b4ff11e70d447e4666eadecf1e6dae
+parent c50fcd07eae83010fd8b0be6dac22b23195de219
+author Sten <sten@Stens-MacBook.local> 2018-12-11 17:51:17 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 17:51:17 +0200
+
+    Improve vet details loading
+
+
+
+:100644 100644 235fb95d6a0213092201563b764dc34be486f4c3 f4cc782f9e7c9a4a1fd56ec00f28be07cdc8f1c5 M	spring-petclinic-api-gateway/src/main/resources/bootstrap.yml
+:100644 100644 d47daf335fb4db8c52d10f135af53df6cef261b3 02ff1b23b143a4a0b60c2bc70d843a471ef2422c M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+commit c50fcd07eae83010fd8b0be6dac22b23195de219
+tree ebb172593b47b602854e3a6bc10c285b2aa50fb9
+parent 339a4752359d112715cc1b5bacdf018ca6cdeb67
+author Sten <sten@Stens-MacBook.local> 2018-12-11 17:26:27 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 17:26:27 +0200
+
+    Reduce selenide timeout
+
+
+
+:100644 100644 f101ead84c9e041bd61f99f003ee824468dc25ff fd477fbc7e0611746e07c07dd13879ebef29d6a7 M	spring-petclinic-e2e-tests/pom.xml
+commit 339a4752359d112715cc1b5bacdf018ca6cdeb67
+tree acb4156b5000f58435e2e2742e1b35c26a70bfcf
+parent 37d7f4a47393b7343d3b77a7224b1c97ea8f9dd5
+author Sten <sten@Stens-MacBook.local> 2018-12-11 16:27:40 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 16:27:40 +0200
+
+    Revert timeouts, test fixes
+
+
+
+:100644 100644 d707701dae9c0f003ec3eaf51d87ebcfa6a47ebf cef66b4a3523650e48ba69182c76a1815d4d6dd8 M	spring-petclinic-api-gateway/src/main/resources/application.yml
+:100644 100644 fd25164217ae39b0068b22298e1f1c266fbcf1fa f101ead84c9e041bd61f99f003ee824468dc25ff M	spring-petclinic-e2e-tests/pom.xml
+:100644 100644 ab1ff53b0de7eac2216e04b7ae0f8245da434b82 d47daf335fb4db8c52d10f135af53df6cef261b3 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+commit 37d7f4a47393b7343d3b77a7224b1c97ea8f9dd5
+tree 2e651fd2942547fd67426775ff465df548369cea
+parent 2e3bd5952bbdabbc3e6c341ffd0ec979d8f0276b
+author Sten <sten@Stens-MacBook.local> 2018-12-11 14:23:57 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 14:23:57 +0200
+
+    Update Zitriz timeouts
+
+
+
+:100644 100644 cef66b4a3523650e48ba69182c76a1815d4d6dd8 d707701dae9c0f003ec3eaf51d87ebcfa6a47ebf M	spring-petclinic-api-gateway/src/main/resources/application.yml
+:100644 100644 db5c73131118e17336880a2e3fff9efd669f5e54 fd25164217ae39b0068b22298e1f1c266fbcf1fa M	spring-petclinic-e2e-tests/pom.xml
+:100644 100644 a47fbb19f9f7fe417aa4857da92a1dcdbecc2163 ab1ff53b0de7eac2216e04b7ae0f8245da434b82 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+commit 2e3bd5952bbdabbc3e6c341ffd0ec979d8f0276b
+tree 29fb9f991e26a2cc37cfdd89c975930dfea626d3
+parent 9235161de3114bb6d6e22a620f7b1f616ea87a10
+author Sten Suitsev <stensuitsev@gmail.com> 2018-12-11 11:09:39 +0200
+committer GitHub <noreply@github.com> 2018-12-11 11:09:39 +0200
+
+    Increase selenide timeout
+
+
+
+:100644 100644 6609491aa88adb23595c4486ccf09a4fcda6069f db5c73131118e17336880a2e3fff9efd669f5e54 M	spring-petclinic-e2e-tests/pom.xml
+commit 9235161de3114bb6d6e22a620f7b1f616ea87a10
+tree aad51614f30c4bea8b12ef29de937f26c38c4b22
+parent 9ad9bbb3ced29a9219f00769b99c01ea8e2ef6c1
+author mirkoadari <mirko.adari@live.com> 2018-12-11 10:58:22 +0200
+committer GitHub <noreply@github.com> 2018-12-11 10:58:22 +0200
+
+    Update application.yml
+
+
+
+:100644 100644 f5839fced9ab67227ae798905ed90555d74cfa78 cef66b4a3523650e48ba69182c76a1815d4d6dd8 M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit 9ad9bbb3ced29a9219f00769b99c01ea8e2ef6c1
+tree fe377f7909eb2250357c5bf0ece54e370b29f0ea
+parent d050af3f616b67da1b3ef9a568262d6910958c74
+author mirkoadari <mirko.adari@live.com> 2018-12-11 10:51:00 +0200
+committer GitHub <noreply@github.com> 2018-12-11 10:51:00 +0200
+
+    Update application.yml
+
+
+
+:100644 100644 dcaf289f7a8fc4707c6cef05a4830f45e57410a3 f5839fced9ab67227ae798905ed90555d74cfa78 M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit d050af3f616b67da1b3ef9a568262d6910958c74
+tree 5b7503cd427f0864583629bc5aaa1855598b67b4
+parent 09994ee7884d33424d822667e31e20b5ecf7241f
+author mirkoadari <mirko.adari@live.com> 2018-12-11 10:26:14 +0200
+committer GitHub <noreply@github.com> 2018-12-11 10:26:14 +0200
+
+    Update application.yml
+
+
+
+:100644 100644 0e5c94d3c3098b74602104e72da5472e1ccb6b42 dcaf289f7a8fc4707c6cef05a4830f45e57410a3 M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit 09994ee7884d33424d822667e31e20b5ecf7241f
+tree 37fb52780fe8fc185ed383e9023c3edf956e3ec1
+parent fc9c8d61ec3be98359cfc0938d8284a417fa9e59
+author mirkoadari <mirko.adari@live.com> 2018-12-11 10:09:59 +0200
+committer GitHub <noreply@github.com> 2018-12-11 10:09:59 +0200
+
+    Update application.yml
+
+
+
+:100644 100644 a1bd9f5e3998f792ee93d2f96e7346cbd8eb30ee 0e5c94d3c3098b74602104e72da5472e1ccb6b42 M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit fc9c8d61ec3be98359cfc0938d8284a417fa9e59
+tree 8a666b0a84c9b17b8be395c4345b5bdbbe233c88
+parent f32e995e34debd329e59fc0179af322f12be51d9
+author mirkoadari <mirko.adari@live.com> 2018-12-11 10:07:04 +0200
+committer GitHub <noreply@github.com> 2018-12-11 10:07:04 +0200
+
+    Update application.yml
+
+
+
+:100644 100644 34c50d3f8131bdc5422b857e2b27a85b8447df1e a1bd9f5e3998f792ee93d2f96e7346cbd8eb30ee M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit f32e995e34debd329e59fc0179af322f12be51d9
+tree b5db899ee76e8f287cfc0edccf171c22188a0566
+parent ae8069b497d68fc8cc1d6e1e71c008bc582305e9
+author Sten Suitsev <stensuitsev@gmail.com> 2018-12-11 09:38:35 +0200
+committer GitHub <noreply@github.com> 2018-12-11 09:38:35 +0200
+
+    Update hystrix timeouts
+
+
+
+:100644 100644 c4b0465a7789325b81130c17940611e60f7ed36d 34c50d3f8131bdc5422b857e2b27a85b8447df1e M	spring-petclinic-api-gateway/src/main/resources/application.yml
+commit ae8069b497d68fc8cc1d6e1e71c008bc582305e9
+tree 63fc04fb0d9f965218493006291525a89e029f5d
+parent 67a50730ad221afa540642b0b306b6132bb479a6
+author Sten <sten@Stens-MacBook.local> 2018-12-10 16:16:12 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-10 16:16:12 +0200
+
+    Zuul stability improvements
+
+
+
+:100644 100644 021c7e18392e5156fa9e8ba1a9a7d6935dad44fd c4b0465a7789325b81130c17940611e60f7ed36d M	spring-petclinic-api-gateway/src/main/resources/application.yml
+:100644 100644 f4cc782f9e7c9a4a1fd56ec00f28be07cdc8f1c5 235fb95d6a0213092201563b764dc34be486f4c3 M	spring-petclinic-api-gateway/src/main/resources/bootstrap.yml
+:100644 100644 6f4cfda69e107bd60c8bccabc80e9ca562191ba8 34b9f0e3c9aaac45bfa260c921bc4ae183cb0556 M	spring-petclinic-config-server/src/main/resources/bootstrap.yml
+:100644 100644 da748d0fa59a4cb75f74e7ddd8161ebec01100fc 59eed7f5bb39799510503cf215e31948876bcf4c M	spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/OwnerResource.java
+:100644 100644 c657ca370fb09c8f65f6acb46690419b5fb21d73 094061e297892f4d973ec2daba426463e60d6da9 M	spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetResource.java
+:100644 100644 c0f6dca616a129c2d8eb0c1298e08984476c7b8a 6d165189cb4b79afbb0ba7c701afee3a23ad5b8f M	spring-petclinic-customers-service/src/main/resources/bootstrap.yml
+:100644 100644 676b55f3d6647340e465506dee53e68ab18da4f8 f1a902aa9c0582da5d28700b8fee9e211d1a9d23 M	spring-petclinic-customers-service/src/main/resources/db/hsqldb/data.sql
+:100644 100644 9c07ca22b5376b2b03f48e067314c99b1d93f333 fc22cf5ce8b01243880b6729f7276b36553dca13 M	spring-petclinic-discovery-server/src/main/resources/bootstrap.yml
+:100644 100644 6941a144667361cb07521f1ec1a1866f14704b14 fd90c4d3a7fdec24008f306a9d7c03130704514f M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/system/CacheConfig.java
+:100644 100644 0fa3a3d249aa541145367580889b815add973330 505fb10c3cd48bfb6adcf309c4eedc55ebd7ff8a M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java
+:100644 100644 50072a6e8909edff924c63b61917cc2731702f5a 3b4cc1d3f739d296de80728eb26d5b9529b3ab82 M	spring-petclinic-vets-service/src/main/resources/application.properties
+:100644 100644 59c6dd258808b780bde6286184c458b0bdff3d5f 93c546facc8f81dc17bcb4d296d3e80b3dc6ffbb M	spring-petclinic-vets-service/src/main/resources/bootstrap.yml
+:100644 100644 2ebab12e1b4fbc518d2d085e440d8c7161e4635f b32ff05c74bfca5aad8486fd2e2792c1cbfc04fc M	spring-petclinic-visits-service/src/main/java/org/springframework/samples/petclinic/visits/web/VisitResource.java
+:100644 100644 1ddd133b1eac88d9a2c3355e255c849808a0e114 e392d5bb91147e9a166d6eb22e536ff5c3a70440 M	spring-petclinic-visits-service/src/main/resources/bootstrap.yml
+commit 67a50730ad221afa540642b0b306b6132bb479a6
+tree e85c8cc99b57045e5d33c2d314530bb065099f47
+parent e65b3b69a79c114c9b2b9552c75b77ab4193ba18
+author Sten <sten@Stens-MacBook.local> 2018-12-09 14:07:49 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-09 14:07:49 +0200
+
+    PET-32 Add customers picker to vets
+
+
+
+:100644 100644 943f0f19eed3b607663e8c768d15e39c195af136 e49c793cb6ceac7270eafa7262f3e5a46f010f0e M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-details/vet-details.template.html
+:100644 100644 2d7e3e8e7472776834ed581e3f1e74caa669b934 608c4e816a9754f8ed67bf7bb7540a3b39639d0e M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.controller.js
+:100644 100644 a8241e9b2564de054a59a9ca6d398d67a72159e0 c2b67baffe95773e6c078804f6d1c1fe9f5b4140 M	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.template.html
+:100644 100644 2f5cb36636895f7b740712233fff69fcea47d58f ff4694ca8270540f7c7911aca6ffedca3f82c85c M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/VetsServiceApplication.java
+:000000 100644 0000000000000000000000000000000000000000 4632c5acbb3a09625c0ca821ddeb2242a22a19fb A	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/OwnerDetails.java
+:100644 100644 aa9e3b1b25068f6675fee313d846193e3468b2b9 58661bd605da2de81d05159832e0c82e969c1b0d M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
+:100644 100644 eabe3a6068d3d418d64c4519213ee362214530ee 0fa3a3d249aa541145367580889b815add973330 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

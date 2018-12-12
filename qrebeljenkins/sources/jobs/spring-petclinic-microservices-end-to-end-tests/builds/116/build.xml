@@ -1,0 +1,145 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.1">
+      <buildsByBranchName>
+        <entry>
+          <string>detached</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.4">
+              <sha1>a0d4002b6713e3e0ea8bc8148885ab058ecbf4ff</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>detached</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@2.7.4">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>97</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.4">
+              <sha1>bc610d0b1e11eaac640f7d35819bce083a782191</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>116</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/baseline</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.4">
+              <sha1>3f85f1d0536cf1132961cf3bde215161aa4cb7e7</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/baseline</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@2.7.4">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>73</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.4">
+              <sha1>a22d9fb8e87f2d51e64886cf433f6374c70a180a</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@2.7.4">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>67</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sten711/spring-petclinic-microservices</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/jobs/spring-petclinic-microservices-end-to-end-tests/workspace</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.envpropagator.EnvMapperAction plugin="build-env-propagator@1.0">
+      <customEnvMapping>
+        <entry>
+          <string>QREBEL_AUTH_TOKEN</string>
+          <string>ae487773-386b-4508-8f1d-cac79497ed60</string>
+        </entry>
+        <entry>
+          <string>APP_VERSION</string>
+          <string>2.0.7</string>
+        </entry>
+        <entry>
+          <string>APP_BUILD</string>
+          <string>2.0.7RC31</string>
+        </entry>
+      </customEnvMapping>
+    </org.jenkinsci.plugins.envpropagator.EnvMapperAction>
+    <org.jenkinsci.plugins.envpropagator.BuildEnvContributorAction plugin="build-env-propagator@1.0"/>
+  </actions>
+  <queueId>116</queueId>
+  <timestamp>1544547169035</timestamp>
+  <startTime>1544547169040</startTime>
+  <result>FAILURE</result>
+  <description>Failing build due to performance regressions found in spring-petclinic-api-gateway compared to 2.0.7RC26. &lt;br/&gt;Slow Requests: 9 &lt;br/&gt;Excessive IO: 3 &lt;br/&gt;Exceptions: 0 &lt;br/&gt;Threshold limit(ms): 200 ms | slowest endpoint time(ms): 3682 ms &lt;br/&gt;For full report check your &lt;a href= https://hub.qrebel.com/#/101109/app/spring-petclinic-api-gateway?baseline=2.0.7RC26&amp;target=2.0.7RC31&amp;isBuild=11 &gt;dashboard&lt;/a&gt;.&lt;br/&gt;Failing build due to performance regressions found in spring-petclinic-customers-service compared to 2.0.7RC26. &lt;br/&gt;Slow Requests: 2 &lt;br/&gt;Excessive IO: 1 &lt;br/&gt;Exceptions: 0 &lt;br/&gt;Threshold limit(ms): 100 ms | slowest endpoint time(ms): 2371 ms &lt;br/&gt;For full report check your &lt;a href= https://hub.qrebel.com/#/101109/app/spring-petclinic-customers-service?baseline=2.0.7RC26&amp;target=2.0.7RC31&amp;isBuild=11 &gt;dashboard&lt;/a&gt;.&lt;br/&gt;Failing build due to performance regressions found in spring-petclinic-visits-service compared to 2.0.7RC26. &lt;br/&gt;Slow Requests: 2 &lt;br/&gt;Excessive IO: 0 &lt;br/&gt;Exceptions: 0 &lt;br/&gt;Threshold limit(ms): 100 ms | slowest endpoint time(ms): 918 ms &lt;br/&gt;For full report check your &lt;a href= https://hub.qrebel.com/#/101109/app/spring-petclinic-visits-service?baseline=2.0.7RC26&amp;target=2.0.7RC31&amp;isBuild=11 &gt;dashboard&lt;/a&gt;.&lt;br/&gt;Failing build due to performance regressions found in spring-petclinic-vets-service compared to 2.0.7RC26. &lt;br/&gt;Slow Requests: 4 &lt;br/&gt;Excessive IO: 2 &lt;br/&gt;Exceptions: 1 &lt;br/&gt;Threshold limit(ms): 100 ms | slowest endpoint time(ms): 3588 ms &lt;br/&gt;For full report check your &lt;a href= https://hub.qrebel.com/#/101109/app/spring-petclinic-vets-service?baseline=2.0.7RC26&amp;target=2.0.7RC31&amp;isBuild=11 &gt;dashboard&lt;/a&gt;.&lt;br/&gt;Failing build due to performance regressions found in spring-petclinic-discovery-server compared to 2.0.7RC26. &lt;br/&gt;Slow Requests: 2 &lt;br/&gt;Excessive IO: 0 &lt;br/&gt;Exceptions: 0 &lt;br/&gt;Threshold limit(ms): 0 ms | slowest endpoint time(ms): 2154 ms &lt;br/&gt;For full report check your &lt;a href= https://hub.qrebel.com/#/101109/app/spring-petclinic-discovery-server?baseline=2.0.7RC26&amp;target=2.0.7RC31&amp;isBuild=11 &gt;dashboard&lt;/a&gt;.&lt;br/&gt;</description>
+  <duration>555941</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/jobs/spring-petclinic-microservices-end-to-end-tests/workspace</workspace>
+  <hudsonVersion>2.138.3</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.9.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>noreply</string>
+    <string>sten</string>
+  </culprits>
+</build>

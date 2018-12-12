@@ -1,0 +1,20 @@
+commit 3ebdf4e53626aff1fdd9a0a176ab76785b7d2db0
+tree 6a57988a2963eda07a20cadae4fa8c996e35b9dd
+parent 901b447f2b8a697bd917690d948c46debf544104
+author Sten <sten@Stens-MacBook.local> 2018-12-11 23:46:36 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 23:46:36 +0200
+
+    PET-31 #Editing Vets
+
+
+
+:100644 100644 5338fb6c3e94d83114bd65e38b1b0b299dfc521b 440f86489f3f35b64e23a4c1243321907b314012 M	spring-petclinic-api-gateway/src/main/resources/static/index.html
+:100644 100644 4f03b348940154ede0c32bf60008ee4841000cc4 5f78c293e97077a0d7efc848585b8750c944d275 M	spring-petclinic-api-gateway/src/main/resources/static/scripts/app.js
+:000000 100644 0000000000000000000000000000000000000000 bfb43593838dd9d6bd22f5eec359e55970fca9cb A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.component.js
+:000000 100644 0000000000000000000000000000000000000000 608c4e816a9754f8ed67bf7bb7540a3b39639d0e A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.controller.js
+:000000 100644 0000000000000000000000000000000000000000 98c409a562e4e3a3457974af66fc812b3ac2620d A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.js
+:000000 100644 0000000000000000000000000000000000000000 c2b67baffe95773e6c078804f6d1c1fe9f5b4140 A	spring-petclinic-api-gateway/src/main/resources/static/scripts/vet-form/vet-form.template.html
+:100644 100644 99e3815b4e843a87dc12f24b0fd9d033946142e7 03c02d05deacef28d958c45f449ed8bb958e5d5f M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:000000 100644 0000000000000000000000000000000000000000 c291c99ccf803494ddfa240b042bf013d2f4d7b2 A	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/SpecialtyRepository.java
+:100644 100644 cddb6a9e3bdf6169756b3c2387e01bb2be0b6cda 8e89f63d885bbee730fcb76c526b31de85e93080 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
+:100644 100644 752d3da510b8ed18da1f12e364ed4536217544b4 583caec7d20bc457f5c2849eb31840d135a8ff4d M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

@@ -1,0 +1,15 @@
+commit f03fbdbb9f13f5c7ef382e49ae67ab068d0b1cb8
+tree 0ac81b69c0cdafb6cba41ca32b7726cb556acb0d
+parent 272414f6b9dff21fd44d771019fa8eef617255a0
+author Sten <sten@Stens-MacBook.local> 2018-12-12 11:07:38 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-12 11:07:38 +0200
+
+    PET-32 #Add customers to vet edit
+
+
+
+:100644 100644 d9615327aae4e48d90ca9e3d0d1fbfa815cc744a b937910db533802efac749020068180ede27a575 M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
+:100644 100644 2f5cb36636895f7b740712233fff69fcea47d58f ff4694ca8270540f7c7911aca6ffedca3f82c85c M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/VetsServiceApplication.java
+:000000 100644 0000000000000000000000000000000000000000 40289a4fd39a975887c1ee167e5bce04d93b3b48 A	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/OwnerDetails.java
+:100644 100644 8e89f63d885bbee730fcb76c526b31de85e93080 b394d6106e81f99b418e01b0291df7065cfc9b92 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
+:100644 100644 f2ecdf1e5b967149b8641a308bf055a92f9acd41 ac6760d14c57f777328802f3176cd96dd09d4b15 M	spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java

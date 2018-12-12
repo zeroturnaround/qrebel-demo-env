@@ -1,0 +1,12 @@
+commit bc610d0b1e11eaac640f7d35819bce083a782191
+tree 97afc6d1a2b4ff11e70d447e4666eadecf1e6dae
+parent c50fcd07eae83010fd8b0be6dac22b23195de219
+author Sten <sten@Stens-MacBook.local> 2018-12-11 17:51:17 +0200
+committer Sten <sten@Stens-MacBook.local> 2018-12-11 17:51:17 +0200
+
+    Improve vet details loading
+
+
+
+:100644 100644 235fb95d6a0213092201563b764dc34be486f4c3 f4cc782f9e7c9a4a1fd56ec00f28be07cdc8f1c5 M	spring-petclinic-api-gateway/src/main/resources/bootstrap.yml
+:100644 100644 d47daf335fb4db8c52d10f135af53df6cef261b3 02ff1b23b143a4a0b60c2bc70d843a471ef2422c M	spring-petclinic-e2e-tests/src/test/java/com/roguewave/petclinic/vets/tests/VetResourcesITest.java
