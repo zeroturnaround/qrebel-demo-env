@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 
 services: 
   qrebel-jenkins:
@@ -11,13 +11,19 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - jenkins-data:/var/jenkins_home
+    networks:
+      - qrebel-demo-env
 
 
 
 networks:
-  default:
-    external:
-      name: spring-petclinic-microservices_default
+# https://forums.docker.com/t/set-default-network-name-for-compose/36779/2
+# https://docs.docker.com/compose/compose-file/#name-1
+  qrebel-demo-env:
+    name: qrebel-demo-env-net
+#  default:
+#    external:
+#      name: spring-petclinic-microservices_default
 
 volumes:
   jenkins-data:
